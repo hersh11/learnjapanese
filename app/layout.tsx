@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter, Noto_Sans_Devanagari, Noto_Sans_JP, Noto_Serif_JP } from 'next/font/google';
 import './globals.css';
 import { SiteHeader } from '@/components/site-header';
@@ -40,6 +40,19 @@ export const metadata: Metadata = {
   description:
     'A free, calm course in Japanese from the first character to JLPT N4. Taught in English, with Devanagari pronunciation guides for Hindi speakers. No account needed.',
   keywords: ['learn Japanese', 'JLPT N5', 'JLPT N4', 'hiragana', 'katakana', 'Japanese for Hindi speakers'],
+};
+
+/**
+ * Declaring both schemes opts the page out of Chrome's automatic dark-mode
+ * repainting. Without it the browser may force its own dark treatment over the
+ * top, which overrides these tokens and makes the theme toggle look broken.
+ */
+export const viewport: Viewport = {
+  colorScheme: 'light dark',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#FEFAFB' },
+    { media: '(prefers-color-scheme: dark)', color: '#000000' },
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
