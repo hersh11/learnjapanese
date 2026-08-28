@@ -66,7 +66,7 @@ export function KanaExplorer() {
               className="h-4 w-4 cursor-pointer rounded border-rule-strong text-sakura-600
                          focus:ring-2 focus:ring-sakura-500 focus:ring-offset-1"
             />
-            Quiz me — hide readings
+            Quiz me: hide readings
           </label>
           {hideReading && revealed.size > 0 && (
             <button

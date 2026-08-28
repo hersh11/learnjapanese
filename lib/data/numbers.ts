@@ -1,5 +1,5 @@
 /**
- * Numbers, counters, time and dates — with Devanagari readings.
+ * Numbers, counters, time and dates, with Devanagari readings.
  *
  * Japanese numbers are mostly regular, but the irregular readings (4, 7, 9 and the
  * counter mutations) are exactly where beginners stall, so those are flagged
@@ -23,7 +23,7 @@ export const digits: NumberRow[] = [
   { value: '4', kanji: '四', kana: 'よん / し', romaji: 'yon / shi', deva: 'योन / शि', note: 'Prefer よん. し is a homophone of 死 "death", so it is avoided in most counting.' },
   { value: '5', kanji: '五', kana: 'ご', romaji: 'go', deva: 'गो' },
   { value: '6', kanji: '六', kana: 'ろく', romaji: 'roku', deva: 'रोकु' },
-  { value: '7', kanji: '七', kana: 'なな / しち', romaji: 'nana / shichi', deva: 'नाना / शिचि', note: 'Prefer なな — しち is easily misheard as いち on the phone.' },
+  { value: '7', kanji: '七', kana: 'なな / しち', romaji: 'nana / shichi', deva: 'नाना / शिचि', note: 'Prefer なな: しち is easily misheard as いち on the phone.' },
   { value: '8', kanji: '八', kana: 'はち', romaji: 'hachi', deva: 'हाचि' },
   { value: '9', kanji: '九', kana: 'きゅう / く', romaji: 'kyuu / ku', deva: 'क्यू / कु', note: 'Prefer きゅう. く appears in fixed items like 九時 (くじ, 9 o’clock).' },
   { value: '10', kanji: '十', kana: 'じゅう', romaji: 'juu', deva: 'जू' },
@@ -50,8 +50,8 @@ export const largeNumbers: NumberRow[] = [
   { value: '1,000', kanji: '千', kana: 'せん', romaji: 'sen', deva: 'सेन' },
   { value: '3,000', kanji: '三千', kana: 'さんぜん', romaji: 'san-zen', deva: 'सान-ज़ेन', note: 'せん → ぜん after さん.' },
   { value: '8,000', kanji: '八千', kana: 'はっせん', romaji: 'has-sen', deva: 'हास्-सेन' },
-  { value: '10,000', kanji: '万', kana: 'いちまん', romaji: 'ichi-man', deva: 'इचि-मान', note: 'Always いちまん, never just まん. Japanese groups by 10,000 — so 100,000 is 十万 (じゅうまん), "ten man".' },
-  { value: '100,000,000', kanji: '億', kana: 'おく', romaji: 'oku', deva: 'ओकु', note: 'Hindi speakers: 万 ≈ the role लाख plays — a grouping English has no single word for.' },
+  { value: '10,000', kanji: '万', kana: 'いちまん', romaji: 'ichi-man', deva: 'इचि-मान', note: 'Always いちまん, never just まん. Japanese groups by 10,000, so 100,000 is 十万 (じゅうまん), "ten man".' },
+  { value: '100,000,000', kanji: '億', kana: 'おく', romaji: 'oku', deva: 'ओकु', note: 'Hindi speakers: 万 ≈ the role लाख plays, a grouping English has no single word for.' },
 ];
 
 export type CounterRow = {
@@ -81,42 +81,42 @@ export const counters: CounterRow[] = [
     counter: '〜個',
     reading: 'ko',
     deva: 'को',
-    usedFor: 'Small round or chunky objects — apples, erasers, stones.',
+    usedFor: 'Small round or chunky objects: apples, erasers, stones.',
     irregulars: '1 いっこ · 6 ろっこ · 8 はっこ · 10 じゅっこ',
   },
   {
     counter: '〜本',
     reading: 'hon',
     deva: 'होन',
-    usedFor: 'Long thin things — pens, bottles, umbrellas, trains, phone calls.',
+    usedFor: 'Long thin things: pens, bottles, umbrellas, trains, phone calls.',
     irregulars: '1 いっぽん · 3 さんぼん · 6 ろっぽん · 8 はっぽん · 10 じゅっぽん',
   },
   {
     counter: '〜枚',
     reading: 'mai',
     deva: 'माइ',
-    usedFor: 'Flat things — paper, shirts, plates, tickets, SIM cards.',
+    usedFor: 'Flat things: paper, shirts, plates, tickets, SIM cards.',
     irregulars: 'Fully regular. The easiest counter to start with.',
   },
   {
     counter: '〜冊',
     reading: 'satsu',
     deva: 'सात्सु',
-    usedFor: 'Bound volumes — books, magazines, notebooks.',
+    usedFor: 'Bound volumes: books, magazines, notebooks.',
     irregulars: '1 いっさつ · 8 はっさつ · 10 じゅっさつ',
   },
   {
     counter: '〜匹',
     reading: 'hiki',
     deva: 'हिकि',
-    usedFor: 'Small animals — cats, dogs, fish, insects.',
+    usedFor: 'Small animals: cats, dogs, fish, insects.',
     irregulars: '1 いっぴき · 3 さんびき · 6 ろっぴき · 8 はっぴき · 10 じゅっぴき',
   },
   {
     counter: '〜台',
     reading: 'dai',
     deva: 'दाइ',
-    usedFor: 'Machines and vehicles — cars, computers, fridges.',
+    usedFor: 'Machines and vehicles: cars, computers, fridges.',
     irregulars: 'Fully regular.',
   },
   {
@@ -137,9 +137,9 @@ export const counters: CounterRow[] = [
 
 export const hours: NumberRow[] = [
   { value: '1:00', kanji: '一時', kana: 'いちじ', romaji: 'ichi-ji', deva: 'इचि-जि' },
-  { value: '4:00', kanji: '四時', kana: 'よじ', romaji: 'yo-ji', deva: 'यो-जि', note: 'よじ — not よんじ.' },
+  { value: '4:00', kanji: '四時', kana: 'よじ', romaji: 'yo-ji', deva: 'यो-जि', note: 'よじ: not よんじ.' },
   { value: '7:00', kanji: '七時', kana: 'しちじ', romaji: 'shichi-ji', deva: 'शिचि-जि', note: 'Here しち is standard, not なな.' },
-  { value: '9:00', kanji: '九時', kana: 'くじ', romaji: 'ku-ji', deva: 'कु-जि', note: 'くじ — not きゅうじ.' },
+  { value: '9:00', kanji: '九時', kana: 'くじ', romaji: 'ku-ji', deva: 'कु-जि', note: 'くじ: not きゅうじ.' },
 ];
 
 export const minutes: NumberRow[] = [
@@ -148,7 +148,7 @@ export const minutes: NumberRow[] = [
   { value: ':04', kanji: '四分', kana: 'よんぷん', romaji: 'yon-pun', deva: 'योन-पुन' },
   { value: ':05', kanji: '五分', kana: 'ごふん', romaji: 'go-fun', deva: 'गो-फुन' },
   { value: ':10', kanji: '十分', kana: 'じゅっぷん', romaji: 'jup-pun', deva: 'जुप्-पुन' },
-  { value: ':30', kanji: '半', kana: 'はん', romaji: 'han', deva: 'हान', note: '"Half" — 三時半 = 3:30.' },
+  { value: ':30', kanji: '半', kana: 'はん', romaji: 'han', deva: 'हान', note: '"Half": 三時半 = 3:30.' },
 ];
 
 export const daysOfMonth: NumberRow[] = [
@@ -156,18 +156,18 @@ export const daysOfMonth: NumberRow[] = [
   { value: '2nd', kanji: '二日', kana: 'ふつか', romaji: 'futsuka', deva: 'फुत्सुका' },
   { value: '3rd', kanji: '三日', kana: 'みっか', romaji: 'mikka', deva: 'मिक्का' },
   { value: '4th', kanji: '四日', kana: 'よっか', romaji: 'yokka', deva: 'योक्का' },
-  { value: '8th', kanji: '八日', kana: 'ようか', romaji: 'youka', deva: 'योउका', note: 'Often confused with 4th (よっか) — listen for the length.' },
+  { value: '8th', kanji: '八日', kana: 'ようか', romaji: 'youka', deva: 'योउका', note: 'Often confused with 4th (よっか): listen for the length.' },
   { value: '10th', kanji: '十日', kana: 'とおか', romaji: 'tooka', deva: 'तोओका' },
   { value: '14th', kanji: '十四日', kana: 'じゅうよっか', romaji: 'juu-yokka', deva: 'जू-योक्का' },
-  { value: '20th', kanji: '二十日', kana: 'はつか', romaji: 'hatsuka', deva: 'हात्सुका', note: 'Irregular — not にじゅうにち.' },
+  { value: '20th', kanji: '二十日', kana: 'はつか', romaji: 'hatsuka', deva: 'हात्सुका', note: 'Irregular: not にじゅうにち.' },
   { value: '15th', kanji: '十五日', kana: 'じゅうごにち', romaji: 'juu-go-nichi', deva: 'जू-गो-निचि', note: 'From 11 on, most days are just number + にち.' },
 ];
 
 export const months: NumberRow[] = [
   { value: 'January', kanji: '一月', kana: 'いちがつ', romaji: 'ichi-gatsu', deva: 'इचि-गात्सु' },
-  { value: 'April', kanji: '四月', kana: 'しがつ', romaji: 'shi-gatsu', deva: 'शि-गात्सु', note: 'しがつ — not よんがつ.' },
-  { value: 'July', kanji: '七月', kana: 'しちがつ', romaji: 'shichi-gatsu', deva: 'शिचि-गात्सु', note: 'しちがつ — not ななたがつ.' },
-  { value: 'September', kanji: '九月', kana: 'くがつ', romaji: 'ku-gatsu', deva: 'कु-गात्सु', note: 'くがつ — not きゅうがつ.' },
+  { value: 'April', kanji: '四月', kana: 'しがつ', romaji: 'shi-gatsu', deva: 'शि-गात्सु', note: 'しがつ: not よんがつ.' },
+  { value: 'July', kanji: '七月', kana: 'しちがつ', romaji: 'shichi-gatsu', deva: 'शिचि-गात्सु', note: 'しちがつ: not ななたがつ.' },
+  { value: 'September', kanji: '九月', kana: 'くがつ', romaji: 'ku-gatsu', deva: 'कु-गात्सु', note: 'くがつ: not きゅうがつ.' },
 ];
 
 export const weekdays: NumberRow[] = [

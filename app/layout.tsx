@@ -34,7 +34,7 @@ const deva = Noto_Sans_Devanagari({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Nihongo Path — Learn Japanese from zero to N4',
+    default: 'Nihongo Path: Learn Japanese from zero to N4',
     template: '%s · Nihongo Path',
   },
   description:

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { articles, getArticle } from '@/lib/data/articles';
 import { Blocks } from '@/components/blocks';
+import { ReadingProgress } from '@/components/reading-progress';
 import { ArrowLeft, Clock } from '@/components/icons';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -27,6 +28,8 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <article className="mx-auto max-w-3xl px-5 py-16 sm:px-8">
+      <ReadingProgress />
+
       <Link
         href="/articles/"
         className="group inline-flex cursor-pointer items-center gap-2 text-sm text-ink-muted transition-colors duration-200 hover:text-sakura-700"

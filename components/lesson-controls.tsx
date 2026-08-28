@@ -29,18 +29,18 @@ export function LessonControls({
         type="button"
         onClick={() => toggle(id)}
         aria-pressed={done}
-        className={`flex w-full cursor-pointer items-center justify-center gap-2.5 rounded-lg border
-                    px-6 py-3.5 text-base font-medium transition-colors duration-200
+        className={`inline-flex cursor-pointer items-center gap-2 rounded-full border
+                    px-4 py-2 text-sm font-medium transition-colors duration-200
           ${
             done
-              ? 'border-sakura-500 bg-sakura-50 text-sakura-700 hover:bg-sakura-100'
-              : 'border-rule-strong bg-paper-raised text-ink-soft hover:border-sakura-400 hover:bg-sakura-50/50 hover:text-sakura-700'
+              ? 'border-sakura-400 bg-sakura-50 text-sakura-700 hover:bg-sakura-100'
+              : 'border-rule-strong bg-paper-raised text-ink-muted hover:border-sakura-400 hover:text-sakura-700'
           }`}
       >
-        <span className="h-4.5 w-4.5">
+        <span className="h-3.5 w-3.5">
           <Check />
         </span>
-        {done ? 'Completed — tap to undo' : 'Mark this lesson complete'}
+        {done ? 'Completed' : 'Mark complete'}
       </button>
 
       <nav className="mt-6 grid gap-3 sm:grid-cols-2" aria-label="Lesson navigation">

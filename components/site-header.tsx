@@ -29,7 +29,7 @@ export function SiteHeader() {
         <Link
           href="/"
           className="group flex items-baseline gap-2.5 cursor-pointer"
-          aria-label="Nihongo Path — home"
+          aria-label="Nihongo Path, home"
         >
           <span
             lang="ja"

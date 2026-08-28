@@ -21,3 +21,4 @@ __pycache__/
 
 # Vendored third-party skill — regenerate with: uipro init --ai claude
 .claude/skills/
+.agents/

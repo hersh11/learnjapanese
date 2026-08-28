@@ -11,7 +11,7 @@ export default function NotFound() {
         Lost the path
       </h1>
       <p className="mt-4 text-[1.0625rem] leading-relaxed text-ink-soft">
-        This page does not exist. Nothing you have learned is gone — your progress is
+        This page does not exist. Nothing you have learned is gone. Your progress is
         saved in this browser.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">

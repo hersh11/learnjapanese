@@ -1,12 +1,24 @@
 'use client';
 
-import { motion, useReducedMotion } from 'framer-motion';
+import { useEffect, useLayoutEffect, useRef } from 'react';
 
 /**
- * Restrained scroll reveal. The paper style this site borrows from prescribes no
- * animation at all; a short fade-and-rise keeps the page feeling alive without
- * turning a reading surface into a showcase. Honours prefers-reduced-motion.
+ * Scroll reveal that can never hide content permanently.
+ *
+ * The previous version drove this with framer-motion's `whileInView`, which meant
+ * the element shipped with opacity:0 and depended on an observer firing to become
+ * readable. When that observer did not fire the whole page stayed blank — so the
+ * animation is now a pure enhancement layered on top of visible content:
+ *
+ *  - Server render and first paint: fully visible. No JS required to read the page.
+ *  - useLayoutEffect (before paint, so no flash): hide and start observing.
+ *  - A failsafe timer reveals everything regardless, if the observer never fires.
+ *  - prefers-reduced-motion and missing IntersectionObserver skip it entirely.
  */
+
+const useIsomorphicLayoutEffect =
+  typeof window !== 'undefined' ? useLayoutEffect : useEffect;
+
 export function Reveal({
   children,
   delay = 0,
@@ -16,19 +28,55 @@ export function Reveal({
   delay?: number;
   className?: string;
 }) {
-  const reduced = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
 
-  if (reduced) return <div className={className}>{children}</div>;
+  useIsomorphicLayoutEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    if (reduced || typeof IntersectionObserver === 'undefined') return;
+
+    const show = () => {
+      el.classList.remove('reveal-hidden');
+      el.classList.add('reveal-shown');
+    };
+
+    // Already on screen at first paint — show it without hiding it first, so
+    // above-the-fold content never blinks.
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      el.style.animationDelay = `${delay}s`;
+      show();
+      return;
+    }
+
+    el.classList.add('reveal-hidden');
+    el.style.animationDelay = `${delay}s`;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          show();
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '0px 0px -40px 0px' }
+    );
+    observer.observe(el);
+
+    // If anything goes wrong with the observer, the content still appears.
+    const failsafe = window.setTimeout(show, 2000);
+
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(failsafe);
+    };
+  }, [delay]);
 
   return (
-    <motion.div
-      className={className}
-      initial={{ opacity: 0, y: 12 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-64px' }}
-      transition={{ duration: 0.5, delay, ease: [0.22, 1, 0.36, 1] }}
-    >
+    <div ref={ref} className={className}>
       {children}
-    </motion.div>
+    </div>
   );
 }

@@ -29,18 +29,18 @@ export type KanaGroup = {
 export const hiraganaBase: KanaGroup[] = [
   {
     id: 'a',
-    label: 'あ行 — vowels',
+    label: 'あ行: vowels',
     rows: [
       { kana: 'あ', romaji: 'a', deva: 'अ' },
       { kana: 'い', romaji: 'i', deva: 'इ' },
-      { kana: 'う', romaji: 'u', deva: 'उ', note: 'Lips stay flat, not rounded — between उ and ऊ, never puckered like English "oo".' },
+      { kana: 'う', romaji: 'u', deva: 'उ', note: 'Lips stay flat, not rounded: between उ and ऊ, never puckered like English "oo".' },
       { kana: 'え', romaji: 'e', deva: 'ए' },
       { kana: 'お', romaji: 'o', deva: 'ओ' },
     ],
   },
   {
     id: 'ka',
-    label: 'か行 — k',
+    label: 'か行: k',
     rows: [
       { kana: 'か', romaji: 'ka', deva: 'क', note: 'Sits between क and ख. A light puff is fine; a hard ख is too much.' },
       { kana: 'き', romaji: 'ki', deva: 'कि' },
@@ -51,10 +51,10 @@ export const hiraganaBase: KanaGroup[] = [
   },
   {
     id: 'sa',
-    label: 'さ行 — s',
+    label: 'さ行: s',
     rows: [
       { kana: 'さ', romaji: 'sa', deva: 'स' },
-      { kana: 'し', romaji: 'shi', deva: 'शि', note: 'Always शि — never सि.' },
+      { kana: 'し', romaji: 'shi', deva: 'शि', note: 'Always शि: never सि.' },
       { kana: 'す', romaji: 'su', deva: 'सु', note: 'The उ is often nearly silent between consonants: です sounds like "des".' },
       { kana: 'せ', romaji: 'se', deva: 'से' },
       { kana: 'そ', romaji: 'so', deva: 'सो' },
@@ -62,10 +62,10 @@ export const hiraganaBase: KanaGroup[] = [
   },
   {
     id: 'ta',
-    label: 'た行 — t',
+    label: 'た行: t',
     rows: [
-      { kana: 'た', romaji: 'ta', deva: 'त', note: 'Dental त, tongue on the teeth. Never retroflex ट — this is the single most common mistake from English.' },
-      { kana: 'ち', romaji: 'chi', deva: 'चि', note: 'Always चि — never ति.' },
+      { kana: 'た', romaji: 'ta', deva: 'त', note: 'Dental त, tongue on the teeth. Never retroflex ट. This is the most common mistake English speakers make.' },
+      { kana: 'ち', romaji: 'chi', deva: 'चि', note: 'Always चि: never ति.' },
       { kana: 'つ', romaji: 'tsu', deva: 'त्सु', note: 'One sound, not two. Like the त्स ending of "वत्स", followed by a flat उ.' },
       { kana: 'て', romaji: 'te', deva: 'ते' },
       { kana: 'と', romaji: 'to', deva: 'तो' },
@@ -73,7 +73,7 @@ export const hiraganaBase: KanaGroup[] = [
   },
   {
     id: 'na',
-    label: 'な行 — n',
+    label: 'な行: n',
     rows: [
       { kana: 'な', romaji: 'na', deva: 'न', note: 'Dental न, not ण.' },
       { kana: 'に', romaji: 'ni', deva: 'नि' },
@@ -84,9 +84,9 @@ export const hiraganaBase: KanaGroup[] = [
   },
   {
     id: 'ha',
-    label: 'は行 — h',
+    label: 'は行: h',
     rows: [
-      { kana: 'は', romaji: 'ha', deva: 'ह', note: 'As a grammar particle this is read わ (व) — see the particles lesson.' },
+      { kana: 'は', romaji: 'ha', deva: 'ह', note: 'As a grammar particle this is read わ (व). See the particles lesson.' },
       { kana: 'ひ', romaji: 'hi', deva: 'हि' },
       { kana: 'ふ', romaji: 'fu', deva: 'फु', note: 'Blown between both lips, not lip-on-teeth. Softer than English "f", lighter than फ.' },
       { kana: 'へ', romaji: 'he', deva: 'हे', note: 'As a particle this is read え (ए).' },
@@ -95,7 +95,7 @@ export const hiraganaBase: KanaGroup[] = [
   },
   {
     id: 'ma',
-    label: 'ま行 — m',
+    label: 'ま行: m',
     rows: [
       { kana: 'ま', romaji: 'ma', deva: 'म' },
       { kana: 'み', romaji: 'mi', deva: 'मि' },
@@ -106,7 +106,7 @@ export const hiraganaBase: KanaGroup[] = [
   },
   {
     id: 'ya',
-    label: 'や行 — y',
+    label: 'や行: y',
     rows: [
       { kana: 'や', romaji: 'ya', deva: 'य' },
       { kana: 'ゆ', romaji: 'yu', deva: 'यु' },
@@ -115,7 +115,7 @@ export const hiraganaBase: KanaGroup[] = [
   },
   {
     id: 'ra',
-    label: 'ら行 — r',
+    label: 'ら行: r',
     rows: [
       { kana: 'ら', romaji: 'ra', deva: 'र', note: 'A single flap of the tongue, closest to the ड़ in "बड़ा". Not English "r", not a rolled रर.' },
       { kana: 'り', romaji: 'ri', deva: 'रि' },
@@ -126,11 +126,11 @@ export const hiraganaBase: KanaGroup[] = [
   },
   {
     id: 'wa',
-    label: 'わ行 — w & n',
+    label: 'わ行: w & n',
     rows: [
-      { kana: 'わ', romaji: 'wa', deva: 'व', note: 'Lips barely round — lighter than Hindi व.' },
+      { kana: 'わ', romaji: 'wa', deva: 'व', note: 'Lips barely round: lighter than Hindi व.' },
       { kana: 'を', romaji: 'wo', deva: 'ओ', note: 'Pronounced simply ओ. Used only as the object particle.' },
-      { kana: 'ん', romaji: 'n', deva: 'न् / ं', note: 'Its own full beat. Shifts to म before b/p/m — しんぶん sounds like शिम्बुन.' },
+      { kana: 'ん', romaji: 'n', deva: 'न् / ं', note: 'Its own full beat. Shifts to म before b/p/m, so しんぶん sounds like शिम्बुन.' },
     ],
   },
 ];
@@ -138,7 +138,7 @@ export const hiraganaBase: KanaGroup[] = [
 export const hiraganaDakuten: KanaGroup[] = [
   {
     id: 'ga',
-    label: 'が行 — g',
+    label: 'が行: g',
     rows: [
       { kana: 'が', romaji: 'ga', deva: 'ग' },
       { kana: 'ぎ', romaji: 'gi', deva: 'गि' },
@@ -149,7 +149,7 @@ export const hiraganaDakuten: KanaGroup[] = [
   },
   {
     id: 'za',
-    label: 'ざ行 — z',
+    label: 'ざ行: z',
     rows: [
       { kana: 'ざ', romaji: 'za', deva: 'ज़' },
       { kana: 'じ', romaji: 'ji', deva: 'जि' },
@@ -160,10 +160,10 @@ export const hiraganaDakuten: KanaGroup[] = [
   },
   {
     id: 'da',
-    label: 'だ行 — d',
+    label: 'だ行: d',
     rows: [
       { kana: 'だ', romaji: 'da', deva: 'द', note: 'Dental द, not ड.' },
-      { kana: 'ぢ', romaji: 'ji', deva: 'जि', note: 'Same sound as じ. Rare — you will mostly meet it in 鼻血 (はなぢ).' },
+      { kana: 'ぢ', romaji: 'ji', deva: 'जि', note: 'Same sound as じ. Rare: you will mostly meet it in 鼻血 (はなぢ).' },
       { kana: 'づ', romaji: 'zu', deva: 'ज़ु', note: 'Same sound as ず. Rare.' },
       { kana: 'で', romaji: 'de', deva: 'दे' },
       { kana: 'ど', romaji: 'do', deva: 'दो' },
@@ -171,7 +171,7 @@ export const hiraganaDakuten: KanaGroup[] = [
   },
   {
     id: 'ba',
-    label: 'ば行 — b',
+    label: 'ば行: b',
     rows: [
       { kana: 'ば', romaji: 'ba', deva: 'ब' },
       { kana: 'び', romaji: 'bi', deva: 'बि' },
@@ -182,7 +182,7 @@ export const hiraganaDakuten: KanaGroup[] = [
   },
   {
     id: 'pa',
-    label: 'ぱ行 — p',
+    label: 'ぱ行: p',
     rows: [
       { kana: 'ぱ', romaji: 'pa', deva: 'प' },
       { kana: 'ぴ', romaji: 'pi', deva: 'पि' },
@@ -326,7 +326,7 @@ const katakanaFor: Record<string, string> = {
   ぴゃ: 'ピャ', ぴゅ: 'ピュ', ぴょ: 'ピョ',
 };
 
-/** Katakana carries the same sounds — only the shapes differ. */
+/** Katakana carries the same sounds, only the shapes differ. */
 function toKatakana(groups: KanaGroup[]): KanaGroup[] {
   return groups.map((group) => ({
     ...group,

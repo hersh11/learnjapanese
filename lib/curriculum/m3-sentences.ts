@@ -16,27 +16,27 @@ export const firstSentences: Module = {
       body: [
         {
           kind: 'p',
-          text: 'Japanese puts the verb at the end and marks each word’s role with a particle placed after it. English does neither, which is why English speakers find the switch hard. Hindi does both.',
+          text: 'Japanese puts the verb at the end, and marks each word’s role with a particle that comes after it. English does neither, which is why English speakers struggle here. Hindi does both, so you are starting from a much better place than they are.',
         },
         {
           kind: 'note',
           tone: 'hindi',
           title: 'This is the single biggest advantage you have',
-          text: 'Hindi and Japanese are both subject-object-verb with postpositions. मैं खाना खाता हूँ is literally I / food / eat — and 私はご飯を食べます is I は / rice を / eat. The word order is the same. English speakers spend months rebuilding this instinct; you already have it.',
+          text: 'Hindi and Japanese are both subject-object-verb with postpositions. मैं खाना खाता हूँ is literally I / food / eat, and 私はご飯を食べます is I は / rice を / eat. The word order is the same. English speakers spend months rebuilding this instinct; you already have it.',
         },
         {
           kind: 'table',
           head: ['Language', 'Order', 'Sentence'],
           rows: [
-            ['English', 'S–V–O', 'I eat rice'],
-            ['Hindi', 'S–O–V', 'मैं चावल खाता हूँ'],
-            ['Japanese', 'S–O–V', '私はご飯を食べます'],
+            ['English', 'S · V · O', 'I eat rice'],
+            ['Hindi', 'S · O · V', 'मैं चावल खाता हूँ'],
+            ['Japanese', 'S · O · V', '私はご飯を食べます'],
           ],
         },
         { kind: 'h', text: 'Particles are postpositions' },
         {
           kind: 'p',
-          text: 'A particle attaches after a word and announces what that word is doing in the sentence. This is exactly the job Hindi postpositions do — the marker follows the noun rather than preceding it as English prepositions do.',
+          text: 'A particle attaches after a word and tells you what that word is doing in the sentence. That is exactly the job your Hindi postpositions do. The marker follows the noun instead of coming before it, the way English prepositions do.',
         },
         {
           kind: 'table',
@@ -52,7 +52,7 @@ export const firstSentences: Module = {
         { kind: 'h', text: 'Japanese drops what is obvious' },
         {
           kind: 'p',
-          text: 'If context makes the subject clear, it disappears. Saying 私は every sentence sounds oddly insistent, the way repeating "I, myself" would in English.',
+          text: 'If the context makes the subject obvious, drop it. Saying 私は in every sentence sounds oddly insistent, the way repeating "I, myself" would in English.',
         },
         {
           kind: 'examples',
@@ -73,12 +73,12 @@ export const firstSentences: Module = {
     {
       slug: 'desu',
       title: 'です and saying what things are',
-      summary: 'The X は Y です frame — your first complete sentence.',
+      summary: 'The X は Y です frame: your first complete sentence.',
       minutes: 6,
       body: [
         {
           kind: 'p',
-          text: 'です is the polite way to link two things: X は Y です means "X is Y". It is not really a verb, and it never changes for person — which makes it the easiest possible starting point.',
+          text: 'です is the polite way to link two things. X は Y です means "X is Y". It is not really a verb, and it never changes for person, which makes it the easiest place to start.',
         },
         {
           kind: 'note',
@@ -98,12 +98,12 @@ export const firstSentences: Module = {
           kind: 'note',
           tone: 'warn',
           title: 'です is pronounced "des"',
-          text: 'The final う almost vanishes. Say देस, not देसु. The same happens to ます — मास, not मासु.',
+          text: 'The final う almost vanishes. Say देस, not देसु. The same happens to ます, मास, not मासु.',
         },
         { kind: 'h', text: 'Asking questions' },
         {
           kind: 'p',
-          text: 'Add か to the end. Word order does not change at all — there is no inversion the way English flips "you are" to "are you".',
+          text: 'Add か to the end. Nothing else moves. There is no inversion the way English flips "you are" into "are you".',
         },
         {
           kind: 'examples',
@@ -123,40 +123,40 @@ export const firstSentences: Module = {
     },
     {
       slug: 'wa-and-ga',
-      title: 'は and が — the hard one, early',
+      title: 'は and が: the hard one, early',
       summary: 'Two particles that both look like "the subject". The difference is topic versus new information.',
       minutes: 8,
       body: [
         {
           kind: 'p',
-          text: 'This distinction has no clean English equivalent and it is the particle pair learners fight longest. Meeting it early, with a simple rule, works better than avoiding it.',
+          text: 'This one has no clean English equivalent, and it is the particle pair learners fight with longest. I would rather introduce it early with a simple rule than let you avoid it for months.',
         },
         {
           kind: 'note',
           tone: 'warn',
           title: 'は is written は but read わ',
-          text: 'Only when it is working as a particle. As part of a word — はな (flower) — it is read normally as ha.',
+          text: 'Only when it is working as a particle. As part of a word, はな (flower): it is read normally as ha.',
         },
         { kind: 'h', text: 'The working rule' },
         {
           kind: 'list',
           items: [
-            'は sets the topic: "as for X…" — the thing you are already talking about.',
-            'が points at the subject as new or specific information — the answer to a question.',
+            'は sets the topic: "as for X…": the thing you are already talking about.',
+            'が points at the subject as new or specific information, the answer to a question.',
           ],
         },
         {
           kind: 'note',
           tone: 'hindi',
           title: 'Think तो',
-          text: 'は behaves much like Hindi तो in मैं तो जाऊँगा — it lifts something up as the topic and implies a contrast with everything else. English has no particle that does this, which is exactly why the English explanation always sounds vague.',
+          text: 'は behaves much like Hindi तो in मैं तो जाऊँगा, it lifts something up as the topic and implies a contrast with everything else. English has no particle that does this, which is exactly why the English explanation always sounds vague.',
         },
         {
           kind: 'examples',
           items: [
-            { jp: '私は田中です', kana: 'わたしはたなかです', deva: 'वाताशि वा तानाका देस', en: 'As for me, I am Tanaka — introducing yourself' },
-            { jp: '誰が来ましたか', kana: 'だれがきましたか', deva: 'दारे गा किमाशिता का', en: 'Who came? — が, because the answer is new information' },
-            { jp: '田中さんが来ました', kana: 'たなかさんがきました', deva: 'तानाका सान गा किमाशिता', en: 'Tanaka came — が answers the question' },
+            { jp: '私は田中です', kana: 'わたしはたなかです', deva: 'वाताशि वा तानाका देस', en: 'As for me, I am Tanaka: introducing yourself' },
+            { jp: '誰が来ましたか', kana: 'だれがきましたか', deva: 'दारे गा किमाशिता का', en: 'Who came?, が, because the answer is new information' },
+            { jp: '田中さんが来ました', kana: 'たなかさんがきました', deva: 'तानाका सान गा किमाशिता', en: 'Tanaka came: が answers the question' },
           ],
         },
         { kind: 'h', text: 'Where each one is fixed' },
@@ -175,21 +175,21 @@ export const firstSentences: Module = {
           kind: 'note',
           tone: 'tip',
           title: 'Do not try to master this now',
-          text: 'Use は for topics and が after question words, and you will be right most of the time. The finer feel arrives from listening, not from rules — every learner goes through this and it does resolve.',
+          text: 'Use は for topics and が after question words, and you will be right most of the time. The finer feel arrives from listening, not from rules, every learner goes through this and it does resolve.',
         },
       ],
     },
     {
       slug: 'core-particles',
       title: 'The particles you need daily',
-      summary: 'を, に, で, へ, と, も, から, まで — what each one marks.',
+      summary: 'を, に, で, へ, と, も, から, まで: what each one marks.',
       minutes: 9,
       body: [
         {
           kind: 'p',
-          text: 'These eight particles cover most of what you need to say at N5 level. Each attaches after the word it marks, exactly like a Hindi postposition.',
+          text: 'These eight particles cover most of what you need at N5. Each one attaches after the word it marks, exactly like a Hindi postposition.',
         },
-        { kind: 'h', text: '〜を — the object' },
+        { kind: 'h', text: '〜を: the object' },
         {
           kind: 'p',
           text: 'Marks what the verb acts on. Written を but pronounced o.',
@@ -201,10 +201,10 @@ export const firstSentences: Module = {
             { jp: '水を飲みます', kana: 'みずをのみます', deva: 'मिज़ु ओ नोमिमासु', en: 'I drink water' },
           ],
         },
-        { kind: 'h', text: '〜に — destination, time, recipient' },
+        { kind: 'h', text: '〜に: destination, time, recipient' },
         {
           kind: 'p',
-          text: 'The busiest particle. It marks where you are going, when something happens, and who receives something.',
+          text: 'This is the busiest particle you will meet. It marks where you are going, when something happens, and who receives something.',
         },
         {
           kind: 'examples',
@@ -214,10 +214,10 @@ export const firstSentences: Module = {
             { jp: '友達に電話します', kana: 'ともだちにでんわします', deva: 'तोमोदाचि नि देन्वा शिमासु', en: 'I call my friend' },
           ],
         },
-        { kind: 'h', text: '〜で — where the action happens, and how' },
+        { kind: 'h', text: '〜で: where the action happens, and how' },
         {
           kind: 'p',
-          text: 'The contrast with に catches people out: に is where you end up, で is where you do something.',
+          text: 'The contrast with に catches people out: に is where you end up; で is where you do something.',
         },
         {
           kind: 'table',
@@ -235,7 +235,7 @@ export const firstSentences: Module = {
           rows: [
             ['〜へ', 'direction (interchangeable with に for movement)', '日本へ行きます', 'I go to Japan'],
             ['〜と', 'with, and (between nouns)', '友達と行きます', 'I go with a friend'],
-            ['〜も', 'also, too — replaces は or を', '私も学生です', 'I am a student too'],
+            ['〜も', 'also, too: replaces は or を', '私も学生です', 'I am a student too'],
             ['〜から', 'from', '九時から', 'from nine o’clock'],
             ['〜まで', 'until', '五時まで', 'until five o’clock'],
             ['〜の', 'possession, linking nouns', '私の本', 'my book'],
@@ -250,36 +250,36 @@ export const firstSentences: Module = {
         {
           kind: 'note',
           tone: 'hindi',
-          title: 'の is का / की / के — without the agreement',
+          title: 'の is का / की / के: without the agreement',
           text: '私の本 is मेरी किताब. Japanese の never changes for gender or number, so there is no का/की/के choice to make. One particle, always の.',
         },
       ],
     },
     {
       slug: 'this-that',
-      title: 'これ, それ, あれ — this and that',
+      title: 'これ, それ, あれ: this and that',
       summary: 'Japanese splits "that" into two: near you, and near neither of us.',
       minutes: 5,
       body: [
         {
           kind: 'p',
-          text: 'Where English has this and that, Japanese has a three-way split based on distance from each speaker. The pattern is completely regular once you see the こ / そ / あ / ど shape.',
+          text: 'Where English gives you this and that, Japanese splits it three ways by distance from each speaker. Once you spot the こ / そ / あ / ど shape, the whole pattern is regular.',
         },
         {
           kind: 'table',
           head: ['', 'Thing', 'Modifier', 'Place', 'Meaning'],
           rows: [
-            ['こ — near me', 'これ', 'この', 'ここ', 'this / here'],
-            ['そ — near you', 'それ', 'その', 'そこ', 'that / there'],
-            ['あ — away from both', 'あれ', 'あの', 'あそこ', 'that over there'],
-            ['ど — question', 'どれ', 'どの', 'どこ', 'which / where'],
+            ['こ: near me', 'これ', 'この', 'ここ', 'this / here'],
+            ['そ: near you', 'それ', 'その', 'そこ', 'that / there'],
+            ['あ: away from both', 'あれ', 'あの', 'あそこ', 'that over there'],
+            ['ど: question', 'どれ', 'どの', 'どこ', 'which / where'],
           ],
         },
         {
           kind: 'note',
           tone: 'hindi',
           title: 'यह / वह, with one more step',
-          text: 'Hindi splits near and far as यह and वह. Japanese adds a middle term for "near the listener" — それ is the thing in your hand, あれ is the thing across the room from both of us.',
+          text: 'Hindi splits near and far as यह and वह. Japanese adds a middle term for the listener’s side. それ is the thing in your hand; あれ is the thing across the room from both of us.',
         },
         {
           kind: 'note',
@@ -305,12 +305,12 @@ export const firstSentences: Module = {
       body: [
         {
           kind: 'p',
-          text: 'Japanese adjectives come in two families. い-adjectives behave almost like verbs and change their endings; な-adjectives behave like nouns and lean on です. Which family a word belongs to has to be learned with the word.',
+          text: 'Japanese adjectives come in two families. い-adjectives behave almost like verbs and change their own endings. な-adjectives behave like nouns and lean on です. You have to learn which family a word belongs to along with the word itself.',
         },
         { kind: 'h', text: 'い-adjectives' },
         {
           kind: 'p',
-          text: 'End in い and carry their own tense and negation — no です needed to make them work, though です is added for politeness.',
+          text: 'These end in い and carry their own tense and negation. They do not need です to work, though you add it for politeness.',
         },
         {
           kind: 'table',
@@ -325,7 +325,7 @@ export const firstSentences: Module = {
         { kind: 'h', text: 'な-adjectives' },
         {
           kind: 'p',
-          text: 'These take な when placed directly before a noun, and otherwise behave like nouns — you change です rather than the adjective itself.',
+          text: 'These take な when they sit directly before a noun. Otherwise they behave like nouns, so you change です rather than the adjective itself.',
         },
         {
           kind: 'table',
@@ -341,7 +341,7 @@ export const firstSentences: Module = {
           kind: 'note',
           tone: 'warn',
           title: 'きれい and 有名 are な-adjectives',
-          text: 'きれい ends in い but is not an い-adjective — it is きれいな, and its negative is きれいじゃない, never きれくない. 嫌い (きらい) is the same trap.',
+          text: 'きれい ends in い but is not an い-adjective. It is きれいな, and its negative is きれいじゃない, never きれくない. 嫌い (きらい) is the same trap.',
         },
         {
           kind: 'vocab',
@@ -366,7 +366,7 @@ export const firstSentences: Module = {
       body: [
         {
           kind: 'p',
-          text: 'Japanese verbs do not change for person or number — 食べます is I eat, she eats and they eat. What they do change for is tense, politeness and mood. The ます form is the polite present, and it is the right place to start.',
+          text: 'Japanese verbs do not change for person or number. 食べます covers I eat, she eats and they eat. What they do change for is tense, politeness and mood. Start with the ます form, the polite present.',
         },
         { kind: 'h', text: 'The three groups' },
         {
@@ -377,7 +377,7 @@ export const firstSentences: Module = {
             ['Group 1', '', '書く (かく)', '書きます'],
             ['Group 2', 'る-verbs, ichidan', '食べる (たべる)', '食べます'],
             ['Group 2', '', '見る (みる)', '見ます'],
-            ['Group 3', 'irregular — only two', 'する', 'します'],
+            ['Group 3', 'irregular: only two', 'する', 'します'],
             ['Group 3', '', '来る (くる)', '来ます'],
           ],
         },
@@ -385,22 +385,22 @@ export const firstSentences: Module = {
           kind: 'note',
           tone: 'tip',
           title: 'How to tell groups 1 and 2 apart',
-          text: 'If a verb ends in える or いる it is usually Group 2. Everything else is Group 1. There are exceptions — 帰る (かえる, to return) and 走る (はしる, to run) are Group 1 despite how they look.',
+          text: 'If a verb ends in える or いる it is usually Group 2. Everything else is Group 1. There are exceptions, 帰る (かえる, to return) and 走る (はしる, to run) are Group 1 despite how they look.',
         },
         { kind: 'h', text: 'Making the ます form' },
         {
           kind: 'list',
           items: [
-            'Group 2 — drop る, add ます. 食べる → 食べます.',
-            'Group 1 — shift the final u-sound to its i-sound, then add ます. のむ → のみ → のみます.',
-            'Group 3 — memorise: する → します, 来る → 来ます.',
+            'Group 2: drop る, add ます. 食べる → 食べます.',
+            'Group 1: shift the final u-sound to its i-sound, then add ます. のむ → のみ → のみます.',
+            'Group 3, memorise these two: する → します, 来る → 来ます.',
           ],
         },
         {
           kind: 'note',
           tone: 'hindi',
           title: 'Far less to track than Hindi',
-          text: 'Hindi verbs change for gender and number — खाता, खाती, खाते. Japanese does none of that. One form covers every subject, so conjugation is genuinely simpler than what you already handle daily.',
+          text: 'Hindi verbs change for gender and number, खाता, खाती, खाते. Japanese does none of that. One form covers every subject, so conjugation is genuinely simpler than what you already handle daily.',
         },
         {
           kind: 'vocab',
@@ -426,7 +426,7 @@ export const firstSentences: Module = {
       body: [
         {
           kind: 'p',
-          text: 'Once a verb is in ます form, tense and negation are simple substitutions. There are no irregular past tenses to memorise — the pattern below is universal.',
+          text: 'Once a verb is in ます form, tense and negation are simple substitutions. There are no irregular past tenses to memorise. The pattern below is universal.',
         },
         {
           kind: 'table',
@@ -442,7 +442,7 @@ export const firstSentences: Module = {
           kind: 'note',
           tone: 'tip',
           title: 'Present and future are the same form',
-          text: 'Japanese does not have a separate future tense. 行きます means both "I go" and "I will go" — a time word like 明日 (tomorrow) resolves it when it matters.',
+          text: 'Japanese does not have a separate future tense. 行きます means both "I go" and "I will go", a time word like 明日 (tomorrow) resolves it when it matters.',
         },
         {
           kind: 'examples',
@@ -468,17 +468,17 @@ export const firstSentences: Module = {
     {
       slug: 'te-form',
       title: 'The て form',
-      summary: 'One form, many uses — requests, joining sentences, and actions in progress.',
+      summary: 'One form, many uses: requests, joining sentences, and actions in progress.',
       minutes: 8,
       body: [
         {
           kind: 'p',
-          text: 'The て form is the hinge of Japanese grammar. It does not carry tense by itself; instead it connects to other things. Learning it opens up more grammar than any other single form.',
+          text: 'The て form is the hinge of Japanese grammar. It carries no tense of its own; instead it connects to other things. Learn it and you unlock more grammar than any other single form.',
         },
         { kind: 'h', text: 'How to build it' },
         {
           kind: 'p',
-          text: 'Group 2 and Group 3 are trivial. Group 1 depends on the final syllable, and the sound changes are worth drilling.',
+          text: 'Group 2 and Group 3 are easy. Group 1 depends on the final syllable, and those sound changes are worth drilling until they are automatic.',
         },
         {
           kind: 'table',
@@ -490,32 +490,32 @@ export const firstSentences: Module = {
             ['く', 'いて', '書く → 書いて'],
             ['ぐ', 'いで', '泳ぐ → 泳いで'],
             ['す', 'して', '話す → 話して'],
-            ['Irregular', '—', '行く → 行って, する → して, 来る → 来て'],
+            ['Irregular', ', ', '行く → 行って, する → して, 来る → 来て'],
           ],
         },
         {
           kind: 'note',
           tone: 'warn',
           title: '行く is the exception to watch',
-          text: 'By the く rule it should be 行いて. It is not — it is 行って. This is the one Group 1 irregular in the て form.',
+          text: 'By the く rule it should be 行いて. It is not. It is 行って. This is the one Group 1 irregular in the て form.',
         },
         { kind: 'h', text: 'What it unlocks' },
         {
           kind: 'table',
           head: ['Pattern', 'Meaning', 'Example'],
           rows: [
-            ['〜てください', 'please do', '待ってください — please wait'],
-            ['〜ています', 'is doing / ongoing state', '食べています — is eating'],
-            ['〜てもいいです', 'may do', '入ってもいいですか — may I enter?'],
-            ['〜てから', 'after doing', '食べてから — after eating'],
-            ['〜て、〜', 'and then (joining clauses)', '起きて、食べます — I get up and eat'],
+            ['〜てください', 'please do', '待ってください: please wait'],
+            ['〜ています', 'is doing / ongoing state', '食べています: is eating'],
+            ['〜てもいいです', 'may do', '入ってもいいですか: may I enter?'],
+            ['〜てから', 'after doing', '食べてから: after eating'],
+            ['〜て、〜', 'and then (joining clauses)', '起きて、食べます: I get up and eat'],
           ],
         },
         {
           kind: 'note',
           tone: 'hindi',
           title: 'て is the कर of Hindi',
-          text: 'खाकर जाता हूँ — "having eaten, I go". Japanese 食べて行きます is built exactly the same way: a linking form that chains actions in sequence. English needs "and" or "after"; both your languages use a verb form.',
+          text: 'खाकर जाता हूँ: "having eaten, I go". Japanese 食べて行きます is built exactly the same way: a linking form that chains actions in sequence. English needs "and" or "after"; both your languages use a verb form.',
         },
         {
           kind: 'examples',
@@ -529,27 +529,27 @@ export const firstSentences: Module = {
     },
     {
       slug: 'aru-iru',
-      title: 'ある and いる — existence',
+      title: 'ある and いる: existence',
       summary: 'Two verbs for "there is", split by whether the thing is alive.',
       minutes: 5,
       body: [
         {
           kind: 'p',
-          text: 'Japanese uses different verbs for the existence of living and non-living things. The split is not about importance — it is about animacy, and it is strictly enforced.',
+          text: 'Japanese uses different verbs for the existence of living and non-living things. The split is not about importance. It is about animacy, and it is strictly enforced.',
         },
         {
           kind: 'table',
           head: ['Verb', 'Polite', 'Used for', 'Example'],
           rows: [
-            ['ある', 'あります', 'objects, plants, abstract things', '本があります — there is a book'],
-            ['いる', 'います', 'people and animals', '猫がいます — there is a cat'],
+            ['ある', 'あります', 'objects, plants, abstract things', '本があります: there is a book'],
+            ['いる', 'います', 'people and animals', '猫がいます: there is a cat'],
           ],
         },
         {
           kind: 'note',
           tone: 'warn',
           title: 'These take が, not を',
-          text: 'Even though English says "I have a book", Japanese treats it as "a book exists" — 本があります. The thing that exists is marked with が.',
+          text: 'Even though English says "I have a book", Japanese treats it as "a book exists", 本があります. The thing that exists is marked with が.',
         },
         {
           kind: 'note',
@@ -570,12 +570,12 @@ export const firstSentences: Module = {
     {
       slug: 'question-words',
       title: 'Question words',
-      summary: 'What, who, where, when, why, how — and the counting question 何.',
+      summary: 'What, who, where, when, why and how, plus the counting question 何.',
       minutes: 5,
       body: [
         {
           kind: 'p',
-          text: 'Question words slot into the same position the answer would occupy. Nothing reorders, which makes questions easier to build than in English.',
+          text: 'A question word slots into the same position the answer would occupy. Nothing reorders, which makes questions easier to build here than in English.',
         },
         {
           kind: 'table',
@@ -583,26 +583,26 @@ export const firstSentences: Module = {
           rows: [
             ['何', 'なに / なん', 'नानि / नान', 'what'],
             ['誰', 'だれ', 'दारे', 'who'],
-            ['どこ', '—', 'दोको', 'where'],
-            ['いつ', '—', 'इत्सु', 'when'],
-            ['どうして / なぜ', '—', 'दोउशिते / नाज़े', 'why'],
-            ['どう', '—', 'दोउ', 'how'],
-            ['どれ / どの', '—', 'दोरे / दोनो', 'which'],
-            ['いくら', '—', 'इकुरा', 'how much (price)'],
-            ['いくつ', '—', 'इकुत्सु', 'how many'],
+            ['どこ', ', ', 'दोको', 'where'],
+            ['いつ', ', ', 'इत्सु', 'when'],
+            ['どうして / なぜ', ', ', 'दोउशिते / नाज़े', 'why'],
+            ['どう', ', ', 'दोउ', 'how'],
+            ['どれ / どの', ', ', 'दोरे / दोनो', 'which'],
+            ['いくら', ', ', 'इकुरा', 'how much (price)'],
+            ['いくつ', ', ', 'इकुत्सु', 'how many'],
           ],
         },
         {
           kind: 'note',
           tone: 'warn',
           title: '何 is read two ways',
-          text: 'なん before counters and です — 何時 (なんじ), 何ですか (なんですか). なに when it stands alone — 何を食べますか (なにをたべますか).',
+          text: 'なん before counters and です: 何時 (なんじ), 何ですか (なんですか). なに when it stands alone, 何を食べますか (なにをたべますか).',
         },
         {
           kind: 'note',
           tone: 'tip',
           title: 'Question words always take が, never は',
-          text: '誰が来ましたか, not 誰は. A question word is by definition new information, which is が territory — this is the cleanest rule in the は/が distinction.',
+          text: '誰が来ましたか, not 誰は. A question word is new information by definition, and that is が territory. This is the cleanest rule in the whole は/が distinction.',
         },
         {
           kind: 'examples',

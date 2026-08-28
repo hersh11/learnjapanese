@@ -16,7 +16,7 @@ export const kanjiFoundations: Module = {
       body: [
         {
           kind: 'p',
-          text: 'Kanji were borrowed from Chinese over many centuries. Japanese kept the original Chinese-derived pronunciations and also attached them to existing Japanese words — so most characters carry at least two readings. This is the part that frightens beginners, and it is more predictable than it looks.',
+          text: 'Kanji came into Japanese from Chinese over many centuries. Japanese kept the Chinese-derived pronunciations and also attached the characters to words it already had, so most characters carry at least two readings. This is the part that frightens beginners. It is more predictable than it looks.',
         },
         { kind: 'h', text: 'The two reading types' },
         {
@@ -48,12 +48,12 @@ export const kanjiFoundations: Module = {
           kind: 'note',
           tone: 'warn',
           title: 'Do not learn readings as isolated lists',
-          text: 'Memorising that 生 has readings せい, しょう, い, う, は, き, なま in the abstract is close to useless. Learn it inside words — 学生, 先生, 生まれる — and the readings attach themselves.',
+          text: 'Memorising that 生 has readings せい, しょう, い, う, は, き, なま in the abstract is close to useless. Learn it inside words like 学生, 先生 and 生まれる, and the readings attach themselves.',
         },
         { kind: 'h', text: 'Stroke order matters more than it seems' },
         {
           kind: 'p',
-          text: 'Correct stroke order makes characters look right, makes handwriting legible, and makes dictionary lookup by stroke count possible. The general rules: top to bottom, left to right, horizontal before vertical crossing it, outside before inside.',
+          text: 'Correct stroke order makes your characters look right, keeps your handwriting legible, and lets you look words up by stroke count. The general rules: top to bottom, left to right, horizontal before the vertical that crosses it, outside before inside.',
         },
       ],
     },
@@ -65,7 +65,7 @@ export const kanjiFoundations: Module = {
       body: [
         {
           kind: 'p',
-          text: 'Numbers are the easiest possible entry into kanji — you already know the readings from the numbers module, so only the shape is new.',
+          text: 'Numbers are the easiest way into kanji. You already know the readings from the numbers module, so only the shape is new.',
         },
         {
           kind: 'vocab',
@@ -109,14 +109,14 @@ export const kanjiFoundations: Module = {
           kind: 'note',
           tone: 'tip',
           title: '日 is the character to watch',
-          text: 'It appears everywhere and shifts reading constantly — 日本 (にほん), 今日 (きょう), 日曜日 (にちようび), 三日 (みっか). Treat each word as its own item rather than deriving it.',
+          text: 'It appears everywhere and shifts reading constantly, 日本 (にほん), 今日 (きょう), 日曜日 (にちようび), 三日 (みっか). Treat each word as its own item rather than deriving it.',
         },
       ],
     },
     {
       slug: 'kanji-people-nature',
       title: 'Kanji: people, places and nature',
-      summary: 'The pictographic characters — the ones that still look like what they mean.',
+      summary: 'The pictographic characters: the ones that still look like what they mean.',
       minutes: 7,
       body: [
         {
@@ -174,7 +174,7 @@ export const kanjiFoundations: Module = {
           kind: 'note',
           tone: 'tip',
           title: 'Watch for components repeating',
-          text: '休 is 人 (person) beside 木 (tree) — a person resting against a tree, meaning "rest". Once you know a few basic shapes, complex kanji start decomposing into parts you recognise.',
+          text: '休 is 人 (person) beside 木 (tree): a person resting against a tree, meaning "rest". Once you know a few basic shapes, complex kanji start decomposing into parts you recognise.',
         },
       ],
     },
@@ -192,18 +192,18 @@ export const kanjiFoundations: Module = {
           kind: 'vocab',
           title: 'Verbs',
           items: [
-            { jp: '行', kana: 'い(く) / こう', deva: 'इ(कु)', en: 'go — 行きます' },
-            { jp: '来', kana: 'く(る) / らい', deva: 'कु(रु)', en: 'come — 来ます' },
-            { jp: '見', kana: 'み(る) / けん', deva: 'मि(रु)', en: 'see — 見ます' },
-            { jp: '聞', kana: 'き(く) / ぶん', deva: 'कि(कु)', en: 'listen, ask — 聞きます' },
-            { jp: '言', kana: 'い(う) / げん', deva: 'इ(उ)', en: 'say — 言います' },
-            { jp: '食', kana: 'た(べる) / しょく', deva: 'ता(बेरु)', en: 'eat — 食べます' },
-            { jp: '飲', kana: 'の(む) / いん', deva: 'नो(मु)', en: 'drink — 飲みます' },
-            { jp: '読', kana: 'よ(む) / どく', deva: 'यो(मु)', en: 'read — 読みます' },
-            { jp: '書', kana: 'か(く) / しょ', deva: 'का(कु)', en: 'write — 書きます' },
-            { jp: '話', kana: 'はな(す) / わ', deva: 'हाना(सु)', en: 'speak — 話します' },
-            { jp: '買', kana: 'か(う) / ばい', deva: 'का(उ)', en: 'buy — 買います' },
-            { jp: '休', kana: 'やす(む) / きゅう', deva: 'यासु(मु)', en: 'rest — 休みます' },
+            { jp: '行', kana: 'い(く) / こう', deva: 'इ(कु)', en: 'go: 行きます' },
+            { jp: '来', kana: 'く(る) / らい', deva: 'कु(रु)', en: 'come: 来ます' },
+            { jp: '見', kana: 'み(る) / けん', deva: 'मि(रु)', en: 'see: 見ます' },
+            { jp: '聞', kana: 'き(く) / ぶん', deva: 'कि(कु)', en: 'listen, ask: 聞きます' },
+            { jp: '言', kana: 'い(う) / げん', deva: 'इ(उ)', en: 'say: 言います' },
+            { jp: '食', kana: 'た(べる) / しょく', deva: 'ता(बेरु)', en: 'eat: 食べます' },
+            { jp: '飲', kana: 'の(む) / いん', deva: 'नो(मु)', en: 'drink: 飲みます' },
+            { jp: '読', kana: 'よ(む) / どく', deva: 'यो(मु)', en: 'read: 読みます' },
+            { jp: '書', kana: 'か(く) / しょ', deva: 'का(कु)', en: 'write: 書きます' },
+            { jp: '話', kana: 'はな(す) / わ', deva: 'हाना(सु)', en: 'speak: 話します' },
+            { jp: '買', kana: 'か(う) / ばい', deva: 'का(उ)', en: 'buy: 買います' },
+            { jp: '休', kana: 'やす(む) / きゅう', deva: 'यासु(मु)', en: 'rest: 休みます' },
           ],
         },
         {
@@ -224,7 +224,7 @@ export const kanjiFoundations: Module = {
           kind: 'note',
           tone: 'tip',
           title: 'Where to go after this',
-          text: 'That is roughly the N5 set. Read them everywhere you can — signs, menus, product packaging. Recognition in context builds far faster than flashcards alone, though a small daily review deck helps hold what you have already met.',
+          text: 'That is roughly the N5 set. Read them everywhere you can, signs, menus, product packaging. Recognition in context builds far faster than flashcards alone, though a small daily review deck helps hold what you have already met.',
         },
       ],
     },

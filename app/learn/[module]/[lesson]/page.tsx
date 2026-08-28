@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getLesson, modules, neighbours } from '@/lib/curriculum';
 import { Blocks } from '@/components/blocks';
+import { ReadingProgress } from '@/components/reading-progress';
 import { LessonControls } from '@/components/lesson-controls';
 import { ArrowLeft, Clock } from '@/components/icons';
 
@@ -31,6 +32,8 @@ export default async function LessonPage({ params }: Props) {
 
   return (
     <article className="mx-auto max-w-3xl px-5 py-16 sm:px-8">
+      <ReadingProgress />
+
       <nav aria-label="Breadcrumb">
         <Link
           href={`/learn/${mod.slug}/`}

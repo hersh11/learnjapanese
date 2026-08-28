@@ -19,7 +19,7 @@ export default function ArticlesPage() {
           Articles
         </h1>
         <p className="mt-4 max-w-2xl text-[1.0625rem] leading-relaxed text-ink-soft">
-          Standalone pieces on method and context — how to study, what the exams
+          Standalone pieces on method and context: how to study, what the exams
           measure, and where your existing languages help. Read them in any order.
         </p>
       </header>

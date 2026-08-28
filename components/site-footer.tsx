@@ -14,8 +14,8 @@ export function SiteFooter() {
             </div>
             <p className="mt-3 text-sm leading-relaxed text-ink-muted">
               A free course in Japanese from the first character to JLPT N4, with
-              Devanagari pronunciation guides throughout. No account, no tracking —
-              your progress stays in your browser.
+              Devanagari pronunciation guides throughout. No account, no tracking.
+              Your progress stays in your browser.
             </p>
           </div>
 

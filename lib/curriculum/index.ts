@@ -7,7 +7,7 @@ import { towardN4 } from './m5-n4';
 
 export type { Block, Example, Lesson, Module, VocabItem } from './types';
 
-/** Ordered — this is the intended path through the course. */
+/** Ordered: this is the intended path through the course. */
 export const modules: Module[] = [
   soundsAndScript,
   numbersAndCounting,

@@ -23,7 +23,7 @@ export default function LearnPage() {
         </h1>
         <p className="mt-4 max-w-2xl text-[1.0625rem] leading-relaxed text-ink-soft">
           {totalLessons} lessons, about {hours} hours of reading. Work through them
-          top to bottom — each one assumes the ones above it. Tick lessons off as you
+          top to bottom, because each one assumes the ones above it. Tick lessons off as you
           go; your progress is saved in this browser.
         </p>
       </header>

@@ -40,7 +40,7 @@ export default function AboutPage() {
         <p>
           That means this course is written for someone comfortable reading English
           who also reads Hindi. If you do not read Devanagari, the lessons still work
-          — treat those lines as decoration and use the kana instead.
+          . Treat those lines as decoration and use the kana instead.
         </p>
 
         <h2 className="!mt-12 mb-4 font-serif text-2xl font-semibold tracking-tight text-ink">
@@ -55,7 +55,7 @@ export default function AboutPage() {
         <p>
           N5 is complete: the writing system, pronunciation, numbers and counters,
           core grammar, and the roughly one hundred N5 kanji. N4 currently has its
-          foundational lessons — plain form and the た form — with the remaining
+          foundational lessons, plain form and the た form, with the remaining
           topics listed on the{' '}
           <Link href="/learn/" className="link-underline">
             course page
@@ -68,8 +68,8 @@ export default function AboutPage() {
         </h2>
         <p>
           There is nothing to sign up for. Your progress is stored in your
-          browser&rsquo;s local storage, which means it is genuinely private — it
-          never reaches a server — and also genuinely fragile. It will not follow you
+          browser&rsquo;s local storage. That makes it genuinely private, because it
+          never reaches a server, and also genuinely fragile. It will not follow you
           to another device, and clearing your browser data clears it.
         </p>
         <p>
@@ -102,7 +102,7 @@ export default function AboutPage() {
         </ul>
 
         <p className="!mt-10 border-t border-rule pt-6 text-[0.9375rem] text-ink-muted">
-          Corrections are welcome — particularly on the Devanagari readings, which
+          Corrections are welcome, particularly on the Devanagari readings, which
           involve judgement calls where no mapping is exact.
         </p>
       </div>

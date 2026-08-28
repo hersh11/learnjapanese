@@ -49,7 +49,7 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-relaxed text-ink-soft">
-              A calm, complete path from your first character to JLPT N4 — the
+              A calm, complete path from your first character to JLPT N4: the
               writing system, pronunciation, numbers, counters and the grammar that
               gets you speaking. Free, no account, and it remembers where you
               stopped.
@@ -123,7 +123,7 @@ export default function HomePage() {
                 </h2>
                 <p className="mt-4 text-[1.0625rem] leading-relaxed text-ink-soft">
                   Japanese puts the verb last and marks each word with a particle
-                  that follows it. So does Hindi. English does neither — which is
+                  that follows it. So does Hindi. English does neither, which is
                   why the same sentence takes an English speaker far longer to feel
                   natural.
                 </p>
@@ -140,9 +140,9 @@ export default function HomePage() {
 
               <div className="space-y-4">
                 {[
-                  { lang: 'English', order: 'S – V – O', text: 'I eat rice', cls: 'text-ink-muted' },
-                  { lang: 'Hindi', order: 'S – O – V', text: 'मैं चावल खाता हूँ', cls: 'font-deva text-ink' },
-                  { lang: 'Japanese', order: 'S – O – V', text: '私はご飯を食べます', cls: 'font-jp text-ink' },
+                  { lang: 'English', order: 'S · V · O', text: 'I eat rice', cls: 'text-ink-muted' },
+                  { lang: 'Hindi', order: 'S · O · V', text: 'मैं चावल खाता हूँ', cls: 'font-deva text-ink' },
+                  { lang: 'Japanese', order: 'S · O · V', text: '私はご飯を食べます', cls: 'font-jp text-ink' },
                 ].map((row) => (
                   <div
                     key={row.lang}
