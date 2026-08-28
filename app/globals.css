@@ -236,6 +236,35 @@
   }
 }
 
+/* ---- Touch -----------------------------------------------------------------
+   `touch-action: manipulation` removes the 300ms tap delay and stops double-tap
+   zoom from eating the first tap. The transparent tap highlight is replaced by a
+   real active state, so a press looks like it registered even before the handler
+   runs. */
+button,
+a,
+[role='button'],
+label,
+summary,
+input[type='checkbox'] {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tap:active {
+  background-color: rgb(var(--paper-deep));
+}
+
+@media (hover: none) {
+  /* On touch devices there is no hover, so give controls a visible pressed state
+     instead of relying on hover styling that never fires. */
+  .tap:active,
+  a:active,
+  button:active {
+    opacity: 0.72;
+  }
+}
+
 .table-scroll {
   @apply -mx-1 overflow-x-auto px-1;
 }

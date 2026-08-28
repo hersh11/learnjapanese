@@ -24,7 +24,7 @@ export function SiteHeader() {
     pathname === href || (href !== '/' && pathname.startsWith(href));
 
   return (
-    <header className="sticky top-0 z-30 border-b border-rule bg-paper/85 backdrop-blur-sm">
+    <header className="sticky top-0 z-30 border-b border-rule bg-paper">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
         <Link
           href="/"
@@ -65,12 +65,12 @@ export function SiteHeader() {
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md
+            className="tap flex h-11 w-11 cursor-pointer items-center justify-center rounded-md
                        text-ink-soft transition-colors duration-200 hover:bg-paper-sunk hover:text-ink sm:hidden"
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
           >
-            <span className="h-5 w-5">{open ? <X /> : <Menu />}</span>
+            <span className="pointer-events-none h-5 w-5">{open ? <X /> : <Menu />}</span>
           </button>
         </div>
       </div>

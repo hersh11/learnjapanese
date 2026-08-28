@@ -93,13 +93,13 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={toggle}
-      className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md
+      className="tap flex h-11 w-11 cursor-pointer items-center justify-center rounded-md
                  border border-transparent text-ink-muted transition-colors duration-200
                  hover:border-rule hover:bg-paper-sunk hover:text-sakura-600"
       aria-label={label}
       title={label}
     >
-      <span className="h-[1.125rem] w-[1.125rem]">
+      <span className="pointer-events-none h-[1.125rem] w-[1.125rem]">
         {ready && dark ? <Sun /> : <Moon />}
       </span>
     </button>
