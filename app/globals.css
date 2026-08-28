@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Tokens are RGB triplets so Tailwind can apply alpha to them.
+ *
+ * Light: sakura pink on white — soft, warm, high contrast for reading.
+ * Dark:  neon pink on true OLED black (#000). Accent colours carry the neon;
+ *        body text stays a soft off-white, because pure white on pure black
+ *        haloes badly and is tiring over a long lesson.
+ */
+
+@layer base {
+  :root {
+    color-scheme: light;
+
+    --paper: 254 250 251;
+    --paper-raised: 255 255 255;
+    --paper-sunk: 253 244 247;
+    --paper-deep: 250 232 238;
+
+    --ink: 31 26 28;
+    --ink-soft: 71 60 65;
+    --ink-muted: 111 97 103;
+    /* Kept at 4.5:1 against paper — it carries romaji and lesson meta, which are
+       secondary but still text that has to be readable. */
+    --ink-faint: 124 111 117;
+
+    --rule: 245 227 234;
+    --rule-strong: 234 204 216;
+
+    --sakura-50: 255 245 248;
+    --sakura-100: 255 232 239;
+    --sakura-200: 252 207 221;
+    --sakura-300: 248 175 198;
+    --sakura-400: 242 134 168;
+    --sakura-500: 232 93 136;
+    --sakura-600: 196 55 101;
+    --sakura-700: 174 47 87;
+    --sakura-800: 140 38 70;
+    --sakura-900: 107 29 54;
+
+    --plum-50: 250 244 248;
+    --plum-100: 246 232 242;
+    --plum-200: 236 206 228;
+    --plum-300: 221 170 206;
+    --plum-400: 198 120 174;
+    --plum-500: 170 76 140;
+    --plum-600: 143 56 115;
+    --plum-700: 118 45 95;
+    --plum-800: 95 37 77;
+    --plum-900: 74 29 60;
+
+    --teal-50: 240 250 250;
+    --teal-100: 220 244 244;
+    --teal-200: 180 232 232;
+    --teal-300: 128 210 211;
+    --teal-400: 74 180 183;
+    --teal-500: 42 148 152;
+    --teal-600: 27 120 125;
+    --teal-700: 24 96 100;
+    --teal-800: 22 77 80;
+    --teal-900: 19 61 64;
+
+    --amber-50: 255 248 237;
+    --amber-100: 255 238 214;
+    --amber-200: 253 217 168;
+    --amber-300: 249 188 116;
+    --amber-400: 241 150 60;
+    --amber-500: 219 118 26;
+    --amber-600: 168 83 14;
+    --amber-700: 152 74 18;
+    --amber-800: 122 60 19;
+    --amber-900: 99 49 18;
+  }
+
+  .dark {
+    color-scheme: dark;
+
+    --paper: 0 0 0;
+    --paper-raised: 13 10 12;
+    --paper-sunk: 8 6 7;
+    --paper-deep: 23 18 21;
+
+    --ink: 242 237 239;
+    --ink-soft: 206 197 201;
+    --ink-muted: 160 151 156;
+    --ink-faint: 130 121 126;
+
+    --rule: 36 29 33;
+    --rule-strong: 56 45 51;
+
+    /* Inverted: the high steps are the bright ones under dark. */
+    --sakura-50: 48 8 24;
+    --sakura-100: 66 11 32;
+    --sakura-200: 94 16 46;
+    --sakura-300: 138 23 68;
+    --sakura-400: 199 33 97;
+    --sakura-500: 255 45 120;
+    --sakura-600: 255 94 152;
+    --sakura-700: 255 138 181;
+    --sakura-800: 255 178 205;
+    --sakura-900: 255 214 229;
+
+    --plum-50: 44 14 38;
+    --plum-100: 60 19 51;
+    --plum-200: 86 27 73;
+    --plum-300: 125 40 106;
+    --plum-400: 179 60 152;
+    --plum-500: 227 87 195;
+    --plum-600: 240 130 213;
+    --plum-700: 246 166 226;
+    --plum-800: 250 198 237;
+    --plum-900: 252 223 245;
+
+    --teal-50: 6 38 40;
+    --teal-100: 8 51 54;
+    --teal-200: 11 73 77;
+    --teal-300: 15 107 113;
+    --teal-400: 23 158 166;
+    --teal-500: 34 211 220;
+    --teal-600: 94 226 233;
+    --teal-700: 140 236 241;
+    --teal-800: 182 244 247;
+    --teal-900: 214 250 251;
+
+    --amber-50: 48 26 4;
+    --amber-100: 64 35 6;
+    --amber-200: 92 50 8;
+    --amber-300: 133 73 12;
+    --amber-400: 191 108 18;
+    --amber-500: 251 156 40;
+    --amber-600: 253 184 96;
+    --amber-700: 254 207 145;
+    --amber-800: 254 224 184;
+    --amber-900: 255 238 216;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    /* Faint petal-toned grain. Dropped entirely under dark so OLED black stays true. */
+    background-image: radial-gradient(rgba(200, 120, 150, 0.05) 0.5px, transparent 0.5px);
+    background-size: 14px 14px;
+  }
+
+  .dark body {
+    background-image: none;
+  }
+
+  :lang(ja) {
+    @apply font-jp;
+  }
+
+  ::selection {
+    @apply bg-sakura-200 text-sakura-900;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-sakura-500 ring-offset-2 ring-offset-paper rounded-sm;
+  }
+}
+
+@layer components {
+  .link-underline {
+    @apply underline decoration-rule-strong decoration-1 underline-offset-4
+           transition-colors duration-200 hover:decoration-sakura-500 hover:text-sakura-700;
+  }
+
+  .rule-left {
+    @apply border-l-2 border-rule pl-5;
+  }
+
+  /*
+   * Filled buttons need opposite text colours per theme: white on deep pink in
+   * light, black on neon pink in dark. Kept here so the rule lives in one place.
+   */
+  .btn-primary {
+    @apply bg-sakura-600 text-white hover:bg-sakura-700
+           dark:bg-sakura-500 dark:text-black dark:hover:bg-sakura-600;
+  }
+
+  .btn-primary-sm {
+    @apply bg-sakura-600 text-white hover:bg-sakura-700
+           dark:bg-sakura-500 dark:text-black dark:hover:bg-sakura-600;
+  }
+}
+
+.table-scroll {
+  @apply -mx-1 overflow-x-auto px-1;
+}
