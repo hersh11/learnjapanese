@@ -9,6 +9,7 @@ import { ThemeToggle } from './theme-toggle';
 
 const nav = [
   { href: '/learn/', label: 'Course' },
+  { href: '/practice/', label: 'Practice' },
   { href: '/kana/', label: 'Kana chart' },
   { href: '/articles/', label: 'Articles' },
 ];

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getLesson, modules, neighbours } from '@/lib/curriculum';
+import { itemsForLesson } from '@/lib/practice/items';
 import { Blocks } from '@/components/blocks';
 import { ReadingProgress } from '@/components/reading-progress';
 import { LessonControls } from '@/components/lesson-controls';
@@ -76,6 +77,7 @@ export default async function LessonPage({ params }: Props) {
         id={`${mod.slug}/${lesson.slug}`}
         prev={prev}
         next={next}
+        reviewCount={itemsForLesson(`${mod.slug}/${lesson.slug}`).length}
       />
     </article>
   );

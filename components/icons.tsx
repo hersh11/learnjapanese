@@ -122,3 +122,41 @@ export const RotateCcw = (p: IconProps) => (
     <path d="M3 3v5h5" />
   </Svg>
 );
+
+export const Layers = (p: IconProps) => (
+  <Svg {...p}>
+    <path d="m12 2 9 5-9 5-9-5 9-5Z" />
+    <path d="m3 12 9 5 9-5M3 17l9 5 9-5" />
+  </Svg>
+);
+
+export const Flame = (p: IconProps) => (
+  <Svg {...p}>
+    <path d="M12 2c1 3.5 4 4.8 4 8a4 4 0 0 1-8 0c0-1 .3-1.8.8-2.5C8 9 7 10.4 7 12.5a5 5 0 0 0 10 0c0-4.3-3-6.8-5-10.5Z" />
+  </Svg>
+);
+
+export const Sliders = (p: IconProps) => (
+  <Svg {...p}>
+    <path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h10M18 18h2" />
+    <circle cx="16" cy="6" r="2" />
+    <circle cx="10" cy="12" r="2" />
+    <circle cx="16" cy="18" r="2" />
+  </Svg>
+);
+
+export const Eye = (p: IconProps) => (
+  <Svg {...p}>
+    <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" />
+    <circle cx="12" cy="12" r="3" />
+  </Svg>
+);
+
+export const PartyPopper = (p: IconProps) => (
+  <Svg {...p}>
+    <path d="M5.8 11.3 2 22l10.7-3.79" />
+    <path d="M4 3h.01M22 8h.01M15 2h.01M22 20h.01" />
+    <path d="M22 2 11 13" />
+    <path d="M11 13a3 3 0 0 0-3-3 3 3 0 0 0-3 3l6.5 6.5a3 3 0 0 0 3-3 3 3 0 0 0-3-3Z" />
+  </Svg>
+);

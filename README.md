@@ -26,6 +26,30 @@ postpositions, so particles map closely onto को / में / से.
   counters, core grammar, N5 kanji, and N4 (plain form through keigo)
 - **5 articles** on study method and what the JLPT actually measures
 - **Kana chart** with a quiz mode
+- **Spaced review** over every word, sentence and kana character in the course
+
+## Practice
+
+`/practice` schedules review with SM-2, graded Again / Good / Easy. Cards are
+derived from the curriculum rather than authored separately: every `vocab` and
+`examples` block a lesson contains becomes one, so there is no second list to keep
+in sync.
+
+Each item is asked in up to three directions, scheduled independently, because
+reading a word and producing it are different skills:
+
+| Direction | Shown | Recall |
+|-----------|-------|--------|
+| Meaning | 食べる | what it means |
+| Reading | 食べる | たべる (only where kanji hides a reading) |
+| Production | "to eat" | 食べる |
+
+Kana is asked as sound ⇄ character, with the sound in Devanagari rather than
+romaji. Long sentences are recognition-only — nobody reproduces a thirty-character
+sentence from its translation.
+
+New cards are introduced in course order (hiragana, then katakana, then lesson
+material) at a rate you set, defaulting to ten a day.
 
 ## Running it
 
@@ -59,8 +83,11 @@ checked to at least 4.5:1 contrast against its background.
 
 ## Caveats
 
-No audio, no speaking practice, and no spaced-repetition scheduler. Pair this with
-a review app and a source of spoken Japanese.
+No audio and no speaking practice, so pair this with a source of spoken Japanese.
+
+Review only covers `vocab` and `examples` blocks. Material taught in `table`
+blocks — the て form conjugations, the counter mutations, most of the N4 endings —
+is not yet drillable, which leaves out a good deal of what the course teaches.
 
 Corrections are welcome, particularly on the Devanagari readings, where several
 mappings are judgement calls.

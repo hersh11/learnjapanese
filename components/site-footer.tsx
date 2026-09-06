@@ -29,6 +29,11 @@ export function SiteFooter() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/practice/" className="cursor-pointer transition-colors duration-200 hover:text-sakura-700">
+                    Practice
+                  </Link>
+                </li>
+                <li>
                   <Link href="/kana/" className="cursor-pointer transition-colors duration-200 hover:text-sakura-700">
                     Kana chart
                   </Link>
