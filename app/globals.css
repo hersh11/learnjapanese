@@ -78,18 +78,22 @@
   .dark {
     color-scheme: dark;
 
+    /* The page itself stays true black for OLED; only the raised surfaces lift. */
     --paper: 0 0 0;
-    --paper-raised: 13 10 12;
-    --paper-sunk: 8 6 7;
-    --paper-deep: 23 18 21;
+    --paper-raised: 24 19 22;
+    --paper-sunk: 12 9 11;
+    --paper-deep: 34 27 31;
 
     --ink: 242 237 239;
     --ink-soft: 206 197 201;
     --ink-muted: 160 151 156;
-    --ink-faint: 130 121 126;
+    /* 4.74:1 on --paper-raised, which the surface lift above made the tightest
+       pairing on the site. The light theme's note about this applies here too:
+       ink-faint carries romaji and lesson meta, so it has to stay readable. */
+    --ink-faint: 136 127 132;
 
-    --rule: 36 29 33;
-    --rule-strong: 56 45 51;
+    --rule: 48 39 44;
+    --rule-strong: 78 63 71;
 
     /* Inverted: the high steps are the bright ones under dark. */
     --sakura-50: 48 8 24;
@@ -185,8 +189,10 @@
            transition-colors duration-200 hover:decoration-sakura-500 hover:text-sakura-700;
   }
 
+  /* Worked examples. Plum rather than a neutral rule: at 2px a neutral hairline
+     disappears against the dark page, and the spine is what groups each example. */
   .rule-left {
-    @apply border-l-2 border-rule pl-5;
+    @apply border-l-2 border-plum-300 pl-5;
   }
 
   /*

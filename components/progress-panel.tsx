@@ -131,7 +131,7 @@ export function ProgressPanel({ className = '' }: { className?: string }) {
             <button
               type="button"
               onClick={() => setConfirming(true)}
-              className="inline-flex cursor-pointer items-center gap-2 text-sm text-ink-muted
+              className="-my-1 inline-flex cursor-pointer items-center gap-2 py-1 text-sm text-ink-muted
                          transition-colors duration-200 hover:text-plum-700"
             >
               <span className="h-3.5 w-3.5">

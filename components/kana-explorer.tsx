@@ -55,7 +55,7 @@ export function KanaExplorer() {
         />
 
         <div className="flex items-center gap-3">
-          <label className="flex cursor-pointer items-center gap-2.5 text-sm text-ink-soft">
+          <label className="-my-1 flex cursor-pointer items-center gap-2.5 py-1.5 text-sm text-ink-soft">
             <input
               type="checkbox"
               checked={hideReading}
@@ -63,7 +63,7 @@ export function KanaExplorer() {
                 setHideReading(e.target.checked);
                 resetQuiz();
               }}
-              className="h-4 w-4 cursor-pointer rounded border-rule-strong text-sakura-600
+              className="h-5 w-5 cursor-pointer rounded border-rule-strong text-sakura-600
                          focus:ring-2 focus:ring-sakura-500 focus:ring-offset-1"
             />
             Quiz me: hide readings
@@ -117,7 +117,7 @@ export function KanaExplorer() {
               </div>
 
               {group.rows.some((r) => r.note) && !hideReading && (
-                <ul className="mt-3 space-y-1.5 border-l-2 border-rule pl-4">
+                <ul className="mt-3 space-y-1.5 border-l-2 border-rule-strong pl-4">
                   {group.rows
                     .filter((r) => r.note)
                     .map((r) => (

@@ -78,7 +78,7 @@ export function LessonControls({
               <span className="block text-xs uppercase tracking-wider text-ink-faint">
                 Previous
               </span>
-              <span className="mt-0.5 block truncate text-[0.9375rem] font-medium text-ink transition-colors duration-200 group-hover:text-sakura-700">
+              <span className="mt-0.5 block text-[0.9375rem] font-medium text-ink transition-colors duration-200 group-hover:text-sakura-700">
                 {prev.lessonTitle}
               </span>
             </span>
@@ -98,7 +98,7 @@ export function LessonControls({
               <span className="block text-xs uppercase tracking-wider text-ink-faint">
                 Next
               </span>
-              <span className="mt-0.5 block truncate text-[0.9375rem] font-medium text-ink transition-colors duration-200 group-hover:text-sakura-700">
+              <span className="mt-0.5 block text-[0.9375rem] font-medium text-ink transition-colors duration-200 group-hover:text-sakura-700">
                 {next.lessonTitle}
               </span>
             </span>

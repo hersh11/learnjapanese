@@ -29,7 +29,7 @@ export default async function ModulePage({ params }: Props) {
     <div className="mx-auto max-w-4xl px-5 py-16 sm:px-8">
       <Link
         href="/learn/"
-        className="group inline-flex cursor-pointer items-center gap-2 text-sm text-ink-muted transition-colors duration-200 hover:text-sakura-700"
+        className="group -my-1 inline-flex cursor-pointer items-center gap-2 py-1 text-sm text-ink-muted transition-colors duration-200 hover:text-sakura-700"
       >
         <span className="h-4 w-4 transition-transform duration-200 group-hover:-translate-x-0.5">
           <ArrowLeft />

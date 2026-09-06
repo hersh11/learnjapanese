@@ -162,7 +162,7 @@ function KanaGrid({
             ))}
           </div>
           {group.rows.some((r) => r.note) && (
-            <ul className="mt-3 space-y-1.5 border-l-2 border-rule pl-4">
+            <ul className="mt-3 space-y-1.5 border-l-2 border-rule-strong pl-4">
               {group.rows
                 .filter((r) => r.note)
                 .map((r) => (
@@ -243,7 +243,7 @@ function CounterTable() {
           </div>
           <p className="mt-2 text-[0.9375rem] leading-relaxed text-ink-soft">{c.usedFor}</p>
           {c.irregulars && (
-            <p className="mt-2 border-l-2 border-rule pl-3 text-sm leading-relaxed text-ink-muted">
+            <p className="mt-2 border-l-2 border-rule-strong pl-3 text-sm leading-relaxed text-ink-muted">
               <Cell text={c.irregulars} />
             </p>
           )}
@@ -255,9 +255,29 @@ function CounterTable() {
 
 /* --------------------------------- examples ---------------------------------- */
 
+/**
+ * Worked examples run from single words to full sentences, and one layout does not
+ * serve both. A list of two-character words in a full-width column leaves most of
+ * the measure empty and reads as a thin ribbon of text; a sentence squeezed into
+ * half the width wraps badly. So the block picks its own shape: short entries pair
+ * up, anything longer keeps the full line.
+ */
+function isCompact(items: Example[]): boolean {
+  return items.every(
+    (ex) => ex.jp.length <= 8 && ex.deva.length <= 22 && ex.en.length <= 28
+  );
+}
+
 function Examples({ items }: { items: Example[] }) {
+  const compact = isCompact(items);
   return (
-    <ul className="my-7 space-y-4">
+    <ul
+      className={
+        compact
+          ? 'my-7 grid gap-x-10 gap-y-5 sm:grid-cols-2'
+          : 'my-7 space-y-4'
+      }
+    >
       {items.map((ex, i) => (
         <li key={i} className="rule-left">
           <Jp className="block font-jp text-xl leading-snug text-ink">{ex.jp}</Jp>

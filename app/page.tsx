@@ -129,7 +129,7 @@ export default function HomePage() {
                 </p>
                 <Link
                   href="/learn/first-sentences/sentence-shape/"
-                  className="group mt-6 inline-flex cursor-pointer items-center gap-2 text-[0.9375rem] font-medium text-sakura-700 transition-colors duration-200 hover:text-sakura-800"
+                  className="group mt-5 inline-flex cursor-pointer items-center gap-2 py-1 text-[0.9375rem] font-medium text-sakura-700 transition-colors duration-200 hover:text-sakura-800"
                 >
                   See how sentences are built
                   <span className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5">
@@ -170,7 +170,7 @@ export default function HomePage() {
             </h2>
             <Link
               href="/learn/"
-              className="group inline-flex cursor-pointer items-center gap-2 text-[0.9375rem] font-medium text-sakura-700 transition-colors duration-200 hover:text-sakura-800"
+              className="group -my-1 inline-flex cursor-pointer items-center gap-2 py-1 text-[0.9375rem] font-medium text-sakura-700 transition-colors duration-200 hover:text-sakura-800"
             >
               All lessons
               <span className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5">
