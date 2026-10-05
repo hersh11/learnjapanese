@@ -6,7 +6,7 @@ export const kanjiFoundations: Module = {
   level: 'N5',
   marker: '漢',
   summary:
-    'How kanji actually work, and the roughly hundred characters JLPT N5 expects. Learn the system before the list.',
+    'How kanji work, and the roughly hundred characters JLPT N5 expects. Learn the system before the list.',
   lessons: [
     {
       slug: 'how-kanji-work',
@@ -109,7 +109,7 @@ export const kanjiFoundations: Module = {
           kind: 'note',
           tone: 'tip',
           title: '日 is the character to watch',
-          text: 'It appears everywhere and shifts reading constantly, 日本 (にほん), 今日 (きょう), 日曜日 (にちようび), 三日 (みっか). Treat each word as its own item rather than deriving it.',
+          text: 'It appears everywhere and shifts reading constantly: 日本 (にほん), 今日 (きょう), 日曜日 (にちようび), 三日 (みっか). Treat each word as its own item rather than deriving it.',
         },
       ],
     },
@@ -224,7 +224,7 @@ export const kanjiFoundations: Module = {
           kind: 'note',
           tone: 'tip',
           title: 'Where to go after this',
-          text: 'That is roughly the N5 set. Read them everywhere you can, signs, menus, product packaging. Recognition in context builds far faster than flashcards alone, though a small daily review deck helps hold what you have already met.',
+          text: 'That is roughly the N5 set. Read them everywhere you can: signs, menus, product packaging. Recognition in context builds far faster than flashcards alone, though a small daily review deck helps hold what you have already met.',
         },
       ],
     },

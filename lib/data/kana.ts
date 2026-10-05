@@ -54,7 +54,7 @@ export const hiraganaBase: KanaGroup[] = [
     label: 'さ行: s',
     rows: [
       { kana: 'さ', romaji: 'sa', deva: 'स' },
-      { kana: 'し', romaji: 'shi', deva: 'शि', note: 'Always शि: never सि.' },
+      { kana: 'し', romaji: 'shi', deva: 'शि', note: 'Always शि, never सि.' },
       { kana: 'す', romaji: 'su', deva: 'सु', note: 'The उ is often nearly silent between consonants: です sounds like "des".' },
       { kana: 'せ', romaji: 'se', deva: 'से' },
       { kana: 'そ', romaji: 'so', deva: 'सो' },
@@ -65,7 +65,7 @@ export const hiraganaBase: KanaGroup[] = [
     label: 'た行: t',
     rows: [
       { kana: 'た', romaji: 'ta', deva: 'त', note: 'Dental त, tongue on the teeth. Never retroflex ट. This is the most common mistake English speakers make.' },
-      { kana: 'ち', romaji: 'chi', deva: 'चि', note: 'Always चि: never ति.' },
+      { kana: 'ち', romaji: 'chi', deva: 'चि', note: 'Always चि, never ति.' },
       { kana: 'つ', romaji: 'tsu', deva: 'त्सु', note: 'One sound, not two. Like the त्स ending of "वत्स", followed by a flat उ.' },
       { kana: 'て', romaji: 'te', deva: 'ते' },
       { kana: 'と', romaji: 'to', deva: 'तो' },

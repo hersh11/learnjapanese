@@ -21,7 +21,7 @@ export const firstSentences: Module = {
         {
           kind: 'note',
           tone: 'hindi',
-          title: 'This is the single biggest advantage you have',
+          title: 'Your biggest advantage',
           text: 'Hindi and Japanese are both subject-object-verb with postpositions. मैं खाना खाता हूँ is literally I / food / eat, and 私はご飯を食べます is I は / rice を / eat. The word order is the same. English speakers spend months rebuilding this instinct; you already have it.',
         },
         {
@@ -135,13 +135,13 @@ export const firstSentences: Module = {
           kind: 'note',
           tone: 'warn',
           title: 'は is written は but read わ',
-          text: 'Only when it is working as a particle. As part of a word, はな (flower): it is read normally as ha.',
+          text: 'Only when it is working as a particle. As part of a word, as in はな (flower), it is read normally as ha.',
         },
         { kind: 'h', text: 'The working rule' },
         {
           kind: 'list',
           items: [
-            'は sets the topic: "as for X…": the thing you are already talking about.',
+            'は sets the topic ("as for X…"), the thing you are already talking about.',
             'が points at the subject as new or specific information, the answer to a question.',
           ],
         },
@@ -149,13 +149,13 @@ export const firstSentences: Module = {
           kind: 'note',
           tone: 'hindi',
           title: 'Think तो',
-          text: 'は behaves much like Hindi तो in मैं तो जाऊँगा, it lifts something up as the topic and implies a contrast with everything else. English has no particle that does this, which is exactly why the English explanation always sounds vague.',
+          text: 'は behaves much like Hindi तो in मैं तो जाऊँगा: it lifts something up as the topic and implies a contrast with everything else. English has no particle that does this, which is exactly why the English explanation always sounds vague.',
         },
         {
           kind: 'examples',
           items: [
             { jp: '私は田中です', kana: 'わたしはたなかです', deva: 'वाताशि वा तानाका देस', en: 'As for me, I am Tanaka: introducing yourself' },
-            { jp: '誰が来ましたか', kana: 'だれがきましたか', deva: 'दारे गा किमाशिता का', en: 'Who came?, が, because the answer is new information' },
+            { jp: '誰が来ましたか', kana: 'だれがきましたか', deva: 'दारे गा किमाशिता का', en: 'Who came? (が, because the answer is new information)' },
             { jp: '田中さんが来ました', kana: 'たなかさんがきました', deva: 'तानाका सान गा किमाशिता', en: 'Tanaka came: が answers the question' },
           ],
         },
@@ -175,7 +175,7 @@ export const firstSentences: Module = {
           kind: 'note',
           tone: 'tip',
           title: 'Do not try to master this now',
-          text: 'Use は for topics and が after question words, and you will be right most of the time. The finer feel arrives from listening, not from rules, every learner goes through this and it does resolve.',
+          text: 'Use は for topics and が after question words, and you will be right most of the time. The finer feel comes from listening rather than from rules. Every learner goes through this, and it does resolve.',
         },
       ],
     },
@@ -250,8 +250,8 @@ export const firstSentences: Module = {
         {
           kind: 'note',
           tone: 'hindi',
-          title: 'の is का / की / के: without the agreement',
-          text: '私の本 is मेरी किताब. Japanese の never changes for gender or number, so there is no का/की/के choice to make. One particle, always の.',
+          title: 'の is का / की / के, without the agreement',
+          text: '私の本 is मेरी किताब. Japanese の never changes for gender or number, so there is no का/की/के choice to make: it is always の.',
         },
       ],
     },
@@ -385,7 +385,7 @@ export const firstSentences: Module = {
           kind: 'note',
           tone: 'tip',
           title: 'How to tell groups 1 and 2 apart',
-          text: 'If a verb ends in える or いる it is usually Group 2. Everything else is Group 1. There are exceptions, 帰る (かえる, to return) and 走る (はしる, to run) are Group 1 despite how they look.',
+          text: 'If a verb ends in える or いる it is usually Group 2. Everything else is Group 1. There are exceptions: 帰る (かえる, to return) and 走る (はしる, to run) are Group 1 despite how they look.',
         },
         { kind: 'h', text: 'Making the ます form' },
         {
@@ -393,14 +393,14 @@ export const firstSentences: Module = {
           items: [
             'Group 2: drop る, add ます. 食べる → 食べます.',
             'Group 1: shift the final u-sound to its i-sound, then add ます. のむ → のみ → のみます.',
-            'Group 3, memorise these two: する → します, 来る → 来ます.',
+            'Group 3: memorise these two. する → します, 来る → 来ます.',
           ],
         },
         {
           kind: 'note',
           tone: 'hindi',
           title: 'Far less to track than Hindi',
-          text: 'Hindi verbs change for gender and number, खाता, खाती, खाते. Japanese does none of that. One form covers every subject, so conjugation is genuinely simpler than what you already handle daily.',
+          text: 'Hindi verbs change for gender and number: खाता, खाती, खाते. Japanese does none of that. One form covers every subject, so conjugation here is simpler than what you already handle every day.',
         },
         {
           kind: 'vocab',
@@ -442,7 +442,7 @@ export const firstSentences: Module = {
           kind: 'note',
           tone: 'tip',
           title: 'Present and future are the same form',
-          text: 'Japanese does not have a separate future tense. 行きます means both "I go" and "I will go", a time word like 明日 (tomorrow) resolves it when it matters.',
+          text: 'Japanese does not have a separate future tense. 行きます means both "I go" and "I will go"; a time word like 明日 (tomorrow) settles it when it matters.',
         },
         {
           kind: 'examples',
@@ -473,7 +473,7 @@ export const firstSentences: Module = {
       body: [
         {
           kind: 'p',
-          text: 'The て form is the hinge of Japanese grammar. It carries no tense of its own; instead it connects to other things. Learn it and you unlock more grammar than any other single form.',
+          text: 'The て form carries no tense of its own; it connects a verb to whatever comes next. More grammar is built on it than on any other single form.',
         },
         { kind: 'h', text: 'How to build it' },
         {
@@ -490,16 +490,16 @@ export const firstSentences: Module = {
             ['く', 'いて', '書く → 書いて'],
             ['ぐ', 'いで', '泳ぐ → 泳いで'],
             ['す', 'して', '話す → 話して'],
-            ['Irregular', ', ', '行く → 行って, する → して, 来る → 来て'],
+            ['Irregular', '', '行く → 行って, する → して, 来る → 来て'],
           ],
         },
         {
           kind: 'note',
           tone: 'warn',
           title: '行く is the exception to watch',
-          text: 'By the く rule it should be 行いて. It is not. It is 行って. This is the one Group 1 irregular in the て form.',
+          text: 'By the く rule it should be 行いて, but it is 行って: the one Group 1 irregular in the て form.',
         },
-        { kind: 'h', text: 'What it unlocks' },
+        { kind: 'h', text: 'Patterns built on it' },
         {
           kind: 'table',
           head: ['Pattern', 'Meaning', 'Example'],
@@ -535,7 +535,7 @@ export const firstSentences: Module = {
       body: [
         {
           kind: 'p',
-          text: 'Japanese uses different verbs for the existence of living and non-living things. The split is not about importance. It is about animacy, and it is strictly enforced.',
+          text: 'Japanese uses different verbs for the existence of living and non-living things. The split is by animacy, and it is strictly enforced.',
         },
         {
           kind: 'table',
@@ -549,7 +549,7 @@ export const firstSentences: Module = {
           kind: 'note',
           tone: 'warn',
           title: 'These take が, not を',
-          text: 'Even though English says "I have a book", Japanese treats it as "a book exists", 本があります. The thing that exists is marked with が.',
+          text: 'Even though English says "I have a book", Japanese treats it as "a book exists": 本があります. The thing that exists is marked with が.',
         },
         {
           kind: 'note',
@@ -583,13 +583,13 @@ export const firstSentences: Module = {
           rows: [
             ['何', 'なに / なん', 'नानि / नान', 'what'],
             ['誰', 'だれ', 'दारे', 'who'],
-            ['どこ', ', ', 'दोको', 'where'],
-            ['いつ', ', ', 'इत्सु', 'when'],
-            ['どうして / なぜ', ', ', 'दोउशिते / नाज़े', 'why'],
-            ['どう', ', ', 'दोउ', 'how'],
-            ['どれ / どの', ', ', 'दोरे / दोनो', 'which'],
-            ['いくら', ', ', 'इकुरा', 'how much (price)'],
-            ['いくつ', ', ', 'इकुत्सु', 'how many'],
+            ['どこ', '', 'दोको', 'where'],
+            ['いつ', '', 'इत्सु', 'when'],
+            ['どうして / なぜ', '', 'दोउशिते / नाज़े', 'why'],
+            ['どう', '', 'दोउ', 'how'],
+            ['どれ / どの', '', 'दोरे / दोनो', 'which'],
+            ['いくら', '', 'इकुरा', 'how much (price)'],
+            ['いくつ', '', 'इकुत्सु', 'how many'],
           ],
         },
         {

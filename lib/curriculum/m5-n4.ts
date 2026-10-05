@@ -6,11 +6,11 @@ export const towardN4: Module = {
   level: 'N4',
   marker: '四',
   summary:
-    'Plain form, casual speech, and the grammar that turns careful textbook sentences into how people actually talk.',
+    'Plain form, casual speech, and the grammar that turns careful textbook sentences into the way people talk.',
   lessons: [
     {
       slug: 'plain-form',
-      title: 'Plain form: how people actually talk',
+      title: 'Plain form: everyday Japanese',
       summary: 'The ます form is polite. Plain form is the default everywhere else, and N4 is built on it.',
       minutes: 8,
       body: [
@@ -21,8 +21,8 @@ export const towardN4: Module = {
         {
           kind: 'note',
           tone: 'warn',
-          title: 'Plain form is not optional grammar',
-          text: 'It is not simply a casual variant you can skip. Most N4 grammar attaches to the plain form, conditionals, quoting, 〜と思う, relative clauses. Without it, the rest of N4 is unreachable.',
+          title: 'Most of N4 is built on this',
+          text: 'Plain form is more than a casual variant. Most N4 grammar attaches to it: conditionals, quoting, 〜と思う, relative clauses. Without it, the rest of N4 is out of reach.',
         },
         { kind: 'h', text: 'The dictionary form' },
         {
@@ -60,8 +60,8 @@ export const towardN4: Module = {
         {
           kind: 'note',
           tone: 'hindi',
-          title: 'A politeness ladder you already navigate',
-          text: 'Hindi shifts between तू, तुम and आप depending on who you are speaking to, and Japanese does the same thing through verb forms rather than pronouns. The instinct for reading a social situation transfers directly, you are learning new markers, not a new concept.',
+          title: 'A politeness ladder you already use',
+          text: 'Hindi shifts between तू, तुम and आप depending on who you are speaking to, and Japanese does the same thing through verb forms rather than pronouns. The instinct for reading a social situation transfers directly: the markers are new, the concept is not.',
         },
         { kind: 'h', text: 'Plain です' },
         {
@@ -79,7 +79,7 @@ export const towardN4: Module = {
           kind: 'note',
           tone: 'tip',
           title: 'When to use which',
-          text: 'Plain form with friends, family and people younger or junior to you. Polite form with strangers, colleagues, shopkeepers and anyone senior. When unsure, stay polite, over-formality is mildly stiff; over-familiarity is genuinely rude.',
+          text: 'Plain form with friends, family and people younger or junior to you. Polite form with strangers, colleagues, shopkeepers and anyone senior. When unsure, stay polite: over-formality is mildly stiff, but over-familiarity is genuinely rude.',
         },
       ],
     },
@@ -112,7 +112,7 @@ export const towardN4: Module = {
           title: 'Learn て, get た free',
           text: 'The sound-change rules are the same ones from the て form lesson. Drill て until it is automatic and た costs you nothing.',
         },
-        { kind: 'h', text: 'What the た form unlocks' },
+        { kind: 'h', text: 'Patterns built on the た form' },
         {
           kind: 'table',
           head: ['Pattern', 'Meaning', 'Example'],
@@ -123,7 +123,7 @@ export const towardN4: Module = {
             ['〜たあとで', 'after doing', '食べたあとで'],
           ],
         },
-        { kind: 'h', text: 'How casual speech actually sounds' },
+        { kind: 'h', text: 'How casual speech sounds' },
         {
           kind: 'p',
           text: 'Beyond verb forms, casual Japanese trims particles and shortens endings. These are worth recognising long before you use them.',
@@ -142,7 +142,7 @@ export const towardN4: Module = {
           kind: 'note',
           tone: 'warn',
           title: 'Recognise it before you produce it',
-          text: 'Casual speech carries social risk that polite speech does not. Understanding it in anime and conversation is valuable immediately; using it with the wrong person lands badly. Default to polite until someone speaks casually to you first.',
+          text: 'Casual speech carries social risk that polite speech does not. Understanding it in anime and conversation pays off right away; using it with the wrong person lands badly. Default to polite until someone speaks casually to you first.',
         },
       ],
     },
@@ -174,7 +174,7 @@ export const towardN4: Module = {
           kind: 'note',
           tone: 'warn',
           title: 'The negative goes on the inside',
-          text: 'English says "I don’t think he is coming". Japanese says "I think he is not coming", 来ないと思います. Putting the negative on 思う instead is grammatical but means something different and much stronger.',
+          text: 'English says "I don’t think he is coming". Japanese says "I think he is not coming": 来ないと思います. Putting the negative on 思う instead is grammatical but means something different and much stronger.',
         },
         {
           kind: 'note',
@@ -198,7 +198,7 @@ export const towardN4: Module = {
         { kind: 'h', text: 'Relative clauses: describing a noun with a sentence' },
         {
           kind: 'p',
-          text: 'This is the big one. In Japanese an entire clause can sit in front of a noun and describe it, with no equivalent of "who", "which" or "that". The clause just goes before the noun, in plain form.',
+          text: 'In Japanese an entire clause can sit in front of a noun and describe it, with no equivalent of "who", "which" or "that". The clause just goes before the noun, in plain form.',
         },
         {
           kind: 'table',
@@ -234,7 +234,7 @@ export const towardN4: Module = {
     {
       slug: 'potential-form',
       title: 'Potential form: being able to',
-      summary: 'One conjugation that replaces "can", and quietly changes which particle you use.',
+      summary: 'One conjugation that replaces "can", and changes which particle you use.',
       minutes: 6,
       body: [
         {
@@ -265,7 +265,7 @@ export const towardN4: Module = {
           kind: 'note',
           tone: 'warn',
           title: 'を becomes が',
-          text: 'This trips up everyone. 日本語を話します (I speak Japanese) becomes 日本語が話せます (I can speak Japanese). Ability treats the thing as a subject, not an object, the same が you saw with 好き and ある.',
+          text: 'This trips up everyone. 日本語を話します (I speak Japanese) becomes 日本語が話せます (I can speak Japanese). Ability treats the thing as a subject rather than an object, with the same が you saw with 好き and ある.',
         },
         {
           kind: 'examples',
@@ -330,14 +330,14 @@ export const towardN4: Module = {
           kind: 'note',
           tone: 'tip',
           title: '〜つもりです is the firmer version',
-          text: 'ようと思う suggests a leaning; つもりです states a decision. 行くつもりです, "I intend to go". Use つもり when the plan is settled.',
+          text: 'ようと思う suggests a leaning; つもりです states a decision: 行くつもりです means "I intend to go". Use つもり when the plan is settled.',
         },
       ],
     },
     {
       slug: 'conditionals',
       title: 'Conditionals: と, ば, たら, なら',
-      summary: 'Four ways to say "if". Here is which one to reach for.',
+      summary: 'Four ways to say "if", and which one to reach for.',
       minutes: 9,
       body: [
         {
@@ -400,7 +400,7 @@ export const towardN4: Module = {
           kind: 'examples',
           items: [
             { jp: '安ければ買います', kana: 'やすければかいます', deva: 'यासुकेरेबा काइमासु', en: 'If it’s cheap, I’ll buy it' },
-            { jp: 'どうすればいいですか', deva: 'दोउ सुरेबा ईː देस का', en: 'What should I do?, a very common set phrase' },
+            { jp: 'どうすればいいですか', deva: 'दोउ सुरेबा ईː देस का', en: 'What should I do? (a very common set phrase)' },
           ],
         },
         { kind: 'h', text: '〜なら: given that, as for' },
@@ -451,7 +451,7 @@ export const towardN4: Module = {
           kind: 'note',
           tone: 'warn',
           title: 'くれる is the one English speakers forget',
-          text: 'There is no separate English verb for "give to me", so learners reach for あげる in both directions. 友達が本をあげました cannot mean "my friend gave me a book", it has to be くれました.',
+          text: 'There is no separate English verb for "give to me", so learners reach for あげる in both directions. 友達が本をあげました cannot mean "my friend gave me a book"; it has to be くれました.',
         },
         {
           kind: 'examples',
@@ -461,7 +461,7 @@ export const towardN4: Module = {
             { jp: '友達に本をもらいました', kana: 'ともだちにほんをもらいました', deva: 'तोमोदाचि नि होन ओ मोराइमाशिता', en: 'I received a book from my friend' },
           ],
         },
-        { kind: 'h', text: 'Giving actions, not just objects' },
+        { kind: 'h', text: 'Giving actions as well as objects' },
         {
           kind: 'p',
           text: 'Attach these to the て form and they describe doing something for someone. This is how Japanese expresses favours, and it is used constantly.',
@@ -471,14 +471,14 @@ export const towardN4: Module = {
           items: [
             { jp: '友達が手伝ってくれました', kana: 'ともだちがてつだってくれました', deva: 'तोमोदाचि गा तेत्सुदात्ते कुरेमाशिता', en: 'My friend helped me: literally "gave me the helping"' },
             { jp: '先生に教えてもらいました', kana: 'せんせいにおしえてもらいました', deva: 'सेन्सेइ नि ओशिएते मोराइमाशिता', en: 'The teacher taught me' },
-            { jp: '手伝ってくれませんか', kana: 'てつだってくれませんか', deva: 'तेत्सुदात्ते कुरेमासेन का', en: 'Could you help me?, a natural, soft request' },
+            { jp: '手伝ってくれませんか', kana: 'てつだってくれませんか', deva: 'तेत्सुदात्ते कुरेमासेन का', en: 'Could you help me? (a natural, soft request)' },
           ],
         },
         {
           kind: 'note',
           tone: 'hindi',
           title: 'Closer to देना with a direction built in',
-          text: 'Hindi marks direction with compound verbs, दे देना versus ले लेना. Japanese does something comparable but grammaticalises it fully: the choice of verb itself encodes who benefits, and there is no neutral option.',
+          text: 'Hindi marks direction with compound verbs: दे देना versus ले लेना. Japanese does something comparable but grammaticalises it fully: the choice of verb itself encodes who benefits, and there is no neutral option.',
         },
         {
           kind: 'note',
@@ -491,7 +491,7 @@ export const towardN4: Module = {
     {
       slug: 'passive-form',
       title: 'Passive form',
-      summary: 'Being done to: including the uniquely Japanese "suffering passive".',
+      summary: 'Being done to, including the uniquely Japanese "suffering passive".',
       minutes: 7,
       body: [
         {
@@ -513,7 +513,7 @@ export const towardN4: Module = {
           kind: 'note',
           tone: 'warn',
           title: 'Group 2 passive looks identical to the potential',
-          text: '食べられる is both "can eat" and "is eaten". Only context separates them. Group 1 verbs keep them distinct, 読める (can read) versus 読まれる (is read).',
+          text: '食べられる is both "can eat" and "is eaten". Only context separates them. Group 1 verbs keep them distinct: 読める (can read) versus 読まれる (is read).',
         },
         { kind: 'h', text: 'Ordinary passive' },
         {
@@ -587,14 +587,14 @@ export const towardN4: Module = {
         {
           kind: 'examples',
           items: [
-            { jp: '母は私に部屋を掃除させました', kana: 'ははははしにへやをそうじさせました', deva: 'हाहा वा वाताशि नि हेया ओ सोउजि सासेमाशिता', en: 'My mother made me clean my room' },
+            { jp: '母は私に部屋を掃除させました', kana: 'はははわたしにへやをそうじさせました', deva: 'हाहा वा वाताशि नि हेया ओ सोउजि सासेमाशिता', en: 'My mother made me clean my room' },
             { jp: '子供に好きな物を食べさせます', kana: 'こどもにすきなものをたべさせます', deva: 'कोदोमो नि सुकि ना मोनो ओ ताबेसासेमासु', en: 'I let my child eat what they like' },
           ],
         },
         { kind: 'h', text: '〜させていただきます: the very polite request' },
         {
           kind: 'p',
-          text: 'Causative plus the humble もらう. Literally "I will humbly receive permission to do it", the standard formal way to announce your own action in business Japanese.',
+          text: 'Causative plus the humble もらう. Literally "I will humbly receive permission to do it". It is the standard formal way to announce your own action in business Japanese.',
         },
         {
           kind: 'examples',
@@ -607,7 +607,7 @@ export const towardN4: Module = {
           kind: 'note',
           tone: 'warn',
           title: 'Do not use the causative on superiors',
-          text: 'Telling your boss you made them do something is as bad as it sounds. Toward people above you, use the giving-and-receiving forms, 教えていただきました: rather than the causative.',
+          text: 'Telling your boss you made them do something is as bad as it sounds. Toward people above you, use the giving-and-receiving forms (教えていただきました) rather than the causative.',
         },
       ],
     },
@@ -732,7 +732,7 @@ export const towardN4: Module = {
       body: [
         {
           kind: 'p',
-          text: 'Keigo is the layer of Japanese above ます. Full command of it takes years and is well beyond N4, but recognising it is immediately useful, because it is what shop staff, station announcements and customer service actually use.',
+          text: 'Keigo is the layer of Japanese above ます. Full command of it takes years and is well beyond N4, but recognising it is immediately useful, because it is what shop staff, station announcements and customer service use.',
         },
         {
           kind: 'table',
@@ -747,7 +747,7 @@ export const towardN4: Module = {
           kind: 'note',
           tone: 'hindi',
           title: 'The instinct is familiar; the mechanism is not',
-          text: 'Hindi shifts respect through pronouns and verb agreement, आप जाइए versus तू जा. Japanese replaces the verb entirely: 行く becomes いらっしゃる for someone you respect and 参る for yourself. The social reading you already do transfers; the vocabulary does not.',
+          text: 'Hindi shifts respect through pronouns and verb agreement: आप जाइए versus तू जा. Japanese replaces the verb entirely: 行く becomes いらっしゃる for someone you respect and 参る for yourself. The social reading you already do transfers; the vocabulary does not.',
         },
         { kind: 'h', text: 'The verbs worth recognising' },
         {
@@ -759,11 +759,11 @@ export const towardN4: Module = {
             ['言う', 'おっしゃる', '申す / 申し上げる', 'say'],
             ['食べる / 飲む', '召し上がる', 'いただく', 'eat, drink'],
             ['見る', 'ご覧になる', '拝見する', 'see'],
-            ['あげる', ', ', '差し上げる', 'give'],
-            ['もらう', ', ', 'いただく', 'receive'],
+            ['あげる', '', '差し上げる', 'give'],
+            ['もらう', '', 'いただく', 'receive'],
           ],
         },
-        { kind: 'h', text: 'What you will actually hear' },
+        { kind: 'h', text: 'What you will hear' },
         {
           kind: 'examples',
           items: [
@@ -776,7 +776,7 @@ export const towardN4: Module = {
         {
           kind: 'note',
           tone: 'tip',
-          title: 'What to actually do at this level',
+          title: 'What to do at this level',
           text: 'Do not try to produce keigo yet. Polite ます form is entirely appropriate for a learner in almost every situation, and native speakers do not expect more. Learn to understand these phrases; produce them later.',
         },
       ],

@@ -22,10 +22,10 @@ export const articles: Article[] = [
         kind: 'p',
         text: 'Japanese and Hindi are unrelated languages. They share no common ancestor and almost no vocabulary. Yet a Hindi speaker starting Japanese has real structural advantages over an English speaker, and a few specific traps that English speakers never encounter.',
       },
-      { kind: 'h', text: 'What genuinely transfers' },
+      { kind: 'h', text: 'What transfers' },
       {
         kind: 'p',
-        text: 'These are not motivational framing. They are concrete features where your existing instincts produce correct Japanese.',
+        text: 'Each of these is a concrete feature where your existing instincts already produce correct Japanese.',
       },
       {
         kind: 'table',
@@ -43,7 +43,7 @@ export const articles: Article[] = [
         kind: 'note',
         tone: 'hindi',
         title: 'The word order advantage is the largest one',
-        text: 'English speakers spend months learning to hold the verb until the end of the sentence. It feels unnatural to them in a way it simply does not to you. Every complex Japanese sentence, relative clauses, embedded quotes: builds on that instinct.',
+        text: 'English speakers spend months learning to hold the verb until the end of the sentence. It feels unnatural to them in a way it does not to you, and every complex Japanese sentence (relative clauses, embedded quotes) builds on that instinct.',
       },
       { kind: 'h', text: 'Where your Hindi will mislead you' },
       {
@@ -64,7 +64,7 @@ export const articles: Article[] = [
       },
       {
         kind: 'p',
-        text: 'In Hindi, क and ख are different letters that change meaning. In Japanese, the puff of air is free variation, か carries a light aspiration at the start of a word and almost none in the middle, and nobody hears the difference as meaningful. Do not hunt for a ख/क distinction; it is not there.',
+        text: 'In Hindi, क and ख are different letters that change meaning. In Japanese, the puff of air is free variation: か carries a light aspiration at the start of a word and almost none in the middle, and nobody hears the difference as meaningful. Do not hunt for a ख/क distinction; it is not there.',
       },
       {
         kind: 'h',
@@ -72,19 +72,19 @@ export const articles: Article[] = [
       },
       {
         kind: 'p',
-        text: 'Hindi has इ/ई and उ/ऊ, so the concept of vowel length is familiar. But Japanese length is strictly about duration in beats, not vowel quality, おばさん and おばあさん use the identical vowel sound, held for one beat versus two. Reading Japanese long vowels as a quality change rather than a timing change produces words that native speakers hear as wrong.',
+        text: 'Hindi has इ/ई and उ/ऊ, so the concept of vowel length is familiar. But Japanese length is strictly about duration in beats, not vowel quality: おばさん and おばあさん use the identical vowel sound, held for one beat versus two. Reading Japanese long vowels as a quality change rather than a timing change produces words that native speakers hear as wrong.',
       },
       {
         kind: 'note',
         tone: 'warn',
-        title: 'The one to actually drill',
+        title: 'The one to drill',
         text: 'Vowel length. It is the most common source of misunderstood words for learners from any background, and Hindi does not prepare you for the strictly durational version Japanese uses.',
       },
       { kind: 'h', text: 'What is equally hard for everyone' },
       {
         kind: 'list',
         items: [
-          'Kanji. Three thousand characters with multiple readings each, no alphabetic background helps here.',
+          'Kanji. Three thousand characters with multiple readings each; no alphabetic background helps here.',
           'Counters. Hindi has traces of classifiers, but nothing like the scale Japanese enforces.',
           'は versus が. This distinction is hard for every learner, including advanced ones.',
           'Pitch accent. Both Hindi and English are stress-timed in ways that do not map onto Japanese pitch.',
@@ -94,7 +94,7 @@ export const articles: Article[] = [
         kind: 'note',
         tone: 'tip',
         title: 'The practical takeaway',
-        text: 'Use Devanagari for sounds and Hindi grammar intuition for sentence structure. Do not expect vocabulary help, there is essentially none. And treat kanji as a genuinely new skill rather than something your existing literacy shortcuts.',
+        text: 'Use Devanagari for sounds and Hindi grammar intuition for sentence structure. Do not expect vocabulary help; there is essentially none. And treat kanji as a genuinely new skill rather than something your existing literacy shortcuts.',
       },
     ],
   },
@@ -108,7 +108,7 @@ export const articles: Article[] = [
     body: [
       {
         kind: 'p',
-        text: 'Romaji: Japanese written in Latin letters: looks like a gentle on-ramp. Most beginners lean on it for weeks. Almost every one of them later describes it as the thing they wish they had dropped sooner.',
+        text: 'Romaji, Japanese written in Latin letters, looks like a gentle on-ramp. Most beginners lean on it for weeks. Almost every one of them later describes it as the thing they wish they had dropped sooner.',
       },
       { kind: 'h', text: 'It encodes the wrong sounds' },
       {
@@ -137,22 +137,22 @@ export const articles: Article[] = [
         kind: 'p',
         text: 'Japanese timing is counted in equal beats. Kana makes this visible: がっこう is four characters and four beats. Romaji renders it "gakkou", which looks like two syllables and hides the held consonant and the long vowel entirely.',
       },
-      { kind: 'h', text: 'It delays the thing you actually need' },
+      { kind: 'h', text: 'It delays what you need' },
       {
         kind: 'p',
-        text: 'Every hour spent reading romaji is an hour not spent building kana recognition. Kana takes most learners one to two weeks of daily practice. Romaji does not shorten that, it postpones it, while quietly installing pronunciation habits you will have to undo.',
+        text: 'Every hour spent reading romaji is an hour not spent building kana recognition. Kana takes most learners one to two weeks of daily practice. Romaji does not shorten that; it postpones it, and meanwhile it installs pronunciation habits you will have to undo.',
       },
       {
         kind: 'note',
         tone: 'tip',
         title: 'A workable rule',
-        text: 'Use romaji for the first few days if it helps you get moving, then stop. On this site the romaji is deliberately the smallest, faintest thing on every card, read the kana, check yourself against the Devanagari, and let the Latin letters fall away.',
+        text: 'Use romaji for the first few days if it helps you get moving, then stop. On this site the romaji is deliberately the smallest, faintest thing on every card: read the kana, check yourself against the Devanagari, and let the Latin letters fall away.',
       },
     ],
   },
   {
     slug: 'jlpt-n5-and-n4-explained',
-    title: 'What N5 and N4 actually test',
+    title: 'What N5 and N4 test',
     summary:
       'The JLPT levels in concrete terms: what is on the exam, what it does not measure, and whether you need it.',
     minutes: 6,
@@ -169,7 +169,7 @@ export const articles: Article[] = [
         rows: [
           ['Kanji', '~100', '~300'],
           ['Vocabulary', '~800 words', '~1,500 words'],
-          ['Study hours', '250, 400', '500, 800'],
+          ['Study hours', '250 to 400', '500 to 800'],
           ['Grammar', 'Polite forms, basic particles', 'Plain form, conditionals, passive, causative'],
           ['Reading', 'Short kana-heavy passages', 'Everyday topics, short articles'],
           ['Listening', 'Slow, simple exchanges', 'Natural-speed everyday conversation'],
@@ -179,7 +179,7 @@ export const articles: Article[] = [
         kind: 'note',
         tone: 'warn',
         title: 'The hour figures are averages, not promises',
-        text: 'They come from surveys of learners with no prior kanji exposure. Consistency matters far more than total hours, thirty minutes daily outperforms four hours every Sunday, by a wide margin.',
+        text: 'They come from surveys of learners with no prior kanji exposure. Consistency matters far more than total hours: thirty minutes daily outperforms four hours every Sunday by a wide margin.',
       },
       { kind: 'h', text: 'What the exam does not test' },
       {
@@ -190,7 +190,7 @@ export const articles: Article[] = [
         kind: 'list',
         items: [
           'Speaking. There is no spoken component at any level.',
-          'Writing. You never produce a character, the whole exam is multiple choice.',
+          'Writing. You never produce a character; the whole exam is multiple choice.',
           'Handwriting kanji. You need to recognise them, not write them.',
         ],
       },
@@ -203,7 +203,7 @@ export const articles: Article[] = [
       { kind: 'h', text: 'Do you need to take it?' },
       {
         kind: 'p',
-        text: 'For most learners, no. N5 and N4 rarely carry weight for jobs or visas, employers generally look for N2 or N1. Their real value is as a structure: a defined, finite list of what to learn next, which is worth a great deal when a language feels boundless.',
+        text: 'For most learners, no. N5 and N4 rarely carry weight for jobs or visas; employers generally look for N2 or N1. Their real value is as a structure: a defined, finite list of what to learn next, which is worth a great deal when a language feels boundless.',
       },
       {
         kind: 'p',
@@ -215,7 +215,7 @@ export const articles: Article[] = [
     slug: 'studying-kanji-without-drowning',
     title: 'Studying kanji without drowning',
     summary:
-      'The character count is the wrong thing to focus on. Here is what to do instead.',
+      'Why the character count is the wrong thing to focus on, and what to do instead.',
     minutes: 6,
     category: 'Method',
     body: [
@@ -226,7 +226,7 @@ export const articles: Article[] = [
       { kind: 'h', text: 'Learn words, not characters' },
       {
         kind: 'p',
-        text: 'The most common mistake is treating kanji as a list to memorise in isolation, the character, then its meanings, then all its readings. This is slow and it does not stick, because readings only make sense inside words.',
+        text: 'The most common mistake is treating kanji as a list to memorise in isolation: the character, then its meanings, then all its readings. This is slow and it does not stick, because readings only make sense inside words.',
       },
       {
         kind: 'note',
@@ -263,7 +263,7 @@ export const articles: Article[] = [
       {
         kind: 'list',
         items: [
-          'Ten new items a day is sustainable for most people. Twenty is ambitious. Fifty is how people quit.',
+          'Ten new items a day is sustainable for most people, and twenty is ambitious. Fifty a day is how people end up quitting.',
           'Reviews are not optional: skipping them for a week undoes the scheduling entirely.',
           'Always review words in context, not bare characters.',
         ],
@@ -271,7 +271,7 @@ export const articles: Article[] = [
       { kind: 'h', text: 'Read things' },
       {
         kind: 'p',
-        text: 'Flashcards maintain what you have met; reading is what actually teaches. Graded readers, NHK Easy News, product packaging, menus, game menus set to Japanese, anything where you meet a character you half-know and have to resolve it. That resolution is what makes it permanent.',
+        text: 'Flashcards maintain what you have met; reading is what teaches. Graded readers, NHK Easy News, product packaging, menus, game menus set to Japanese, anything where you meet a character you half-know and have to resolve it. That resolution is what makes it permanent.',
       },
     ],
   },
@@ -279,18 +279,18 @@ export const articles: Article[] = [
     slug: 'a-realistic-first-month',
     title: 'A realistic first month',
     summary:
-      'What to actually do, week by week, for your first four weeks, and what to ignore.',
+      'What to do, week by week, for your first four weeks, and what to ignore.',
     minutes: 5,
     category: 'Method',
     body: [
       {
         kind: 'p',
-        text: 'The most common way to fail at Japanese is to start everything at once, kana, kanji, grammar, an app, a textbook, a YouTube series, and burn out inside a month. This is a narrower plan.',
+        text: 'The most common way to fail at Japanese is to start everything at once (kana, kanji, grammar, an app, a textbook, a YouTube series) and burn out inside a month. This is a narrower plan.',
       },
       { kind: 'h', text: 'Week 1: hiragana only' },
       {
         kind: 'p',
-        text: 'Nothing else. Not katakana, not kanji, not vocabulary. Twenty to thirty minutes a day, writing characters by hand while saying them aloud. Handwriting matters here, it builds recall rather than mere recognition.',
+        text: 'Nothing else: no katakana, no kanji, no vocabulary. Spend twenty to thirty minutes a day writing characters by hand while saying them aloud. Handwriting matters here because it builds recall rather than mere recognition.',
       },
       {
         kind: 'note',
@@ -301,7 +301,7 @@ export const articles: Article[] = [
       { kind: 'h', text: 'Week 2: katakana, and your first words' },
       {
         kind: 'p',
-        text: 'Katakana is the same sounds in new shapes, so it goes faster. Because most katakana words are borrowed from English, you can start reading real things almost immediately, menus, signage, product names.',
+        text: 'Katakana is the same sounds in new shapes, so it goes faster. Because most katakana words are borrowed from English, you can start reading real things almost immediately: menus, signage, product names.',
       },
       { kind: 'h', text: 'Week 3: sentence structure' },
       {
@@ -319,10 +319,10 @@ export const articles: Article[] = [
         title: 'What to ignore for now',
         text: 'Pitch accent, keigo, the full counter list, casual speech, and any advice telling you to start immersion on day one. All of these matter eventually. None of them help in month one, and each one is a way to feel busy without progressing.',
       },
-      { kind: 'h', text: 'The thing that actually determines whether you continue' },
+      { kind: 'h', text: 'What decides whether you continue' },
       {
         kind: 'p',
-        text: 'Not method, not materials: frequency. Fifteen minutes every day beats three hours on Saturday, because language retention is a function of how often you revisit, not how long you sit. Make the daily session small enough that you never have a reason to skip it.',
+        text: 'Frequency matters more than method or materials. Fifteen minutes every day beats three hours on Saturday, because retention depends on how often you come back to the material rather than how long you sit with it. Make the daily session small enough that you never have a reason to skip it.',
       },
     ],
   },

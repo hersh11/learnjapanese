@@ -24,7 +24,8 @@ export default function AboutPage() {
         <p>
           Nihongo Path is a free course in Japanese covering the ground from your
           first character to JLPT N4. It is {totalLessons} lessons, roughly {hours}{' '}
-          hours of reading, plus a set of standalone articles on method.
+          hours of reading, a review deck that schedules every word and kana for
+          you, and a set of standalone articles on method.
         </p>
 
         <h2 className="!mt-12 mb-4 font-serif text-2xl font-semibold tracking-tight text-ink">
@@ -39,8 +40,8 @@ export default function AboutPage() {
         </p>
         <p>
           That means this course is written for someone comfortable reading English
-          who also reads Hindi. If you do not read Devanagari, the lessons still work
-          . Treat those lines as decoration and use the kana instead.
+          who also reads Hindi. If you do not read Devanagari, the lessons still work:
+          treat those lines as decoration and use the kana instead.
         </p>
 
         <h2 className="!mt-12 mb-4 font-serif text-2xl font-semibold tracking-tight text-ink">
@@ -53,24 +54,26 @@ export default function AboutPage() {
           N3 and above.
         </p>
         <p>
-          N5 is complete: the writing system, pronunciation, numbers and counters,
-          core grammar, and the roughly one hundred N5 kanji. N4 currently has its
-          foundational lessons, plain form and the た form, with the remaining
-          topics listed on the{' '}
+          Both levels are complete. N5 covers the writing system, pronunciation,
+          numbers and counters, core grammar, and the roughly one hundred N5 kanji.
+          N4 adds the plain form and casual speech, conditionals, the passive and
+          causative, giving and receiving, a first look at keigo, and the next two
+          hundred kanji. The{' '}
           <Link href="/learn/" className="link-underline">
             course page
           </Link>{' '}
-          as they are written.
+          lists every lesson in order.
         </p>
 
         <h2 className="!mt-12 mb-4 font-serif text-2xl font-semibold tracking-tight text-ink">
           No account, and no tracking
         </h2>
         <p>
-          There is nothing to sign up for. Your progress is stored in your
-          browser&rsquo;s local storage. That makes it genuinely private, because it
-          never reaches a server, and also genuinely fragile. It will not follow you
-          to another device, and clearing your browser data clears it.
+          There is nothing to sign up for. Your progress and your review schedule
+          are stored in your browser&rsquo;s local storage. That keeps them private,
+          because they never reach a server, but it also makes them fragile. They
+          will not follow you to another device, and clearing your browser data
+          clears them.
         </p>
         <p>
           You can see and reset what is stored on the{' '}
@@ -85,19 +88,17 @@ export default function AboutPage() {
         </h2>
         <ul className="my-5 list-disc space-y-2.5 pl-5 marker:text-ink-faint">
           <li className="pl-1.5">
-            Audio. Every sound is described in writing, which is not the same as
-            hearing it. Pair this with any source of spoken Japanese.
+            Recorded audio. The speaker buttons use your device&rsquo;s own Japanese
+            voice, which is clear but synthetic, and they only appear if your device
+            has one. The{' '}
+            <Link href="/kana/" className="link-underline">
+              kana chart
+            </Link>{' '}
+            explains how to add a voice. Pair this with a source of spoken Japanese.
           </li>
           <li className="pl-1.5">
             Speaking practice. Reading about grammar does not produce fluency; you
             need someone to talk to.
-          </li>
-          <li className="pl-1.5">
-            Spaced repetition. There is a quiz mode on the{' '}
-            <Link href="/kana/" className="link-underline">
-              kana chart
-            </Link>
-            , but no review scheduler. Use a dedicated app for that.
           </li>
         </ul>
 

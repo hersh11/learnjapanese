@@ -16,7 +16,7 @@ export const soundsAndScript: Module = {
       body: [
         {
           kind: 'p',
-          text: 'Let me start with the good news. Japanese runs on about 100 syllables, and nearly all of them are one consonant plus one vowel. There are five vowels, and they never change. Compare that with English, where "ough" has six different pronunciations. This is a small, honest system, and you can finish learning it in a week.',
+          text: 'Japanese runs on about 100 syllables, and nearly all of them are one consonant plus one vowel. There are five vowels, and they never change. Compare that with English, where "ough" has six different pronunciations. This is a small, honest system, and you can finish learning it in a week.',
         },
         {
           kind: 'h',
@@ -49,7 +49,7 @@ export const soundsAndScript: Module = {
         },
         {
           kind: 'p',
-          text: 'This is the one rhythm rule that matters. Each kana is one beat, called a mora, and every beat takes the same amount of time. Japanese does not stress syllables the way English does, so no part of the word is louder than the rest.',
+          text: 'Each kana is one beat, called a mora, and every beat takes the same amount of time. That is the main rhythm rule. Japanese does not stress syllables the way English does, so no part of the word is louder than the rest.',
         },
         {
           kind: 'examples',
@@ -62,7 +62,7 @@ export const soundsAndScript: Module = {
           kind: 'note',
           tone: 'warn',
           title: 'The habit to avoid',
-          text: 'Don’t lean on romaji. It quietly teaches you English spelling habits: read つ as "tsu" and it turns into two sounds, read ら as "ra" and it turns into an English R. Read the kana, check yourself against the Devanagari, and drop the romaji as soon as you can.',
+          text: 'Don’t lean on romaji. It trains you into English spelling habits: read つ as "tsu" and it turns into two sounds, read ら as "ra" and it turns into an English R. Read the kana, check yourself against the Devanagari, and drop the romaji as soon as you can.',
         },
         {
           kind: 'h',
@@ -84,7 +84,7 @@ export const soundsAndScript: Module = {
           kind: 'note',
           tone: 'tip',
           title: 'Where to spend your first week',
-          text: 'Hiragana only. Leave katakana and kanji alone for now. Once hiragana is automatic, everything after it gets easier. Nothing before it does.',
+          text: 'Hiragana only. Leave katakana and kanji alone for now. Once hiragana is automatic, everything after it gets easier.',
         },
       ],
     },
@@ -96,7 +96,7 @@ export const soundsAndScript: Module = {
       body: [
         {
           kind: 'p',
-          text: 'Hiragana is laid out as a grid: five vowels across, consonant rows going down. Once you see the pattern, you are not memorising 46 unrelated shapes. You are learning 5 vowels and 9 consonants that combine predictably.',
+          text: 'Hiragana is laid out as a grid: five vowels across, consonant rows going down. Once you see the pattern, the 46 shapes stop being unrelated: they are 5 vowels and 9 consonants that combine predictably.',
         },
         { kind: 'h', text: 'The first three rows' },
         { kind: 'kana', script: 'hiragana', set: 'base', groups: ['a', 'ka', 'sa'] },
@@ -121,7 +121,7 @@ export const soundsAndScript: Module = {
         {
           kind: 'note',
           tone: 'tip',
-          title: 'How to actually memorise these',
+          title: 'How to memorise these',
           text: 'Write each character by hand five times while saying it aloud. Handwriting builds recall in a way reading alone does not, and that is the difference between recognising a character and being able to produce it.',
         },
       ],
@@ -222,7 +222,7 @@ export const soundsAndScript: Module = {
       body: [
         {
           kind: 'p',
-          text: 'You are not learning new characters here. Two marks in the top-right corner modify characters you already know. A double stroke (゛) voices the consonant, and a small circle (゜) turns は into ぱ.',
+          text: 'This lesson adds no new characters. Two marks in the top-right corner modify ones you already know. A double stroke (゛) voices the consonant, and a small circle (゜) turns は into ぱ.',
         },
         {
           kind: 'table',
@@ -237,7 +237,7 @@ export const soundsAndScript: Module = {
           kind: 'note',
           tone: 'hindi',
           title: 'Voicing is a pattern you already own',
-          text: 'क→ग, त→द, प→ब is exactly the unvoiced-to-voiced pairing you already use in Hindi. Japanese marks it with a written symbol instead of a separate letter, so there is nothing new to hear. Only something new to read.',
+          text: 'क→ग, त→द, प→ब is exactly the unvoiced-to-voiced pairing you already use in Hindi. Japanese marks it with a written symbol instead of a separate letter, so there is nothing new to hear, only something new to read.',
         },
         {
           kind: 'note',
@@ -271,7 +271,7 @@ export const soundsAndScript: Module = {
           kind: 'note',
           tone: 'hindi',
           title: 'This is a conjunct, and you already read them',
-          text: 'きゃ is क्या. しゅ is शु. Devanagari conjuncts work the same way, two consonants fused into one syllable. English has no clean way to write these, which is why romaji "kya" looks stranger than it actually is.',
+          text: 'きゃ is क्या. しゅ is शु. Devanagari conjuncts work the same way, two consonants fused into one syllable. English has no clean way to write these, which is why romaji "kya" looks stranger than it is.',
         },
         {
           kind: 'note',
@@ -293,7 +293,7 @@ export const soundsAndScript: Module = {
     {
       slug: 'long-vowels-and-small-tsu',
       title: 'Length: long vowels and っ',
-      summary: 'In Japanese, holding a sound longer gives you a different word. This is not a detail you can skip.',
+      summary: 'In Japanese, holding a sound longer gives you a different word, so length is worth getting right early.',
       minutes: 6,
       body: [
         {
@@ -303,7 +303,7 @@ export const soundsAndScript: Module = {
         { kind: 'h', text: 'Long vowels' },
         {
           kind: 'p',
-          text: 'Written by adding a vowel kana. Hold the sound for two beats instead of one.',
+          text: 'You write one by adding a vowel kana. Hold the sound for two beats instead of one.',
         },
         {
           kind: 'table',
@@ -351,7 +351,7 @@ export const soundsAndScript: Module = {
       body: [
         {
           kind: 'p',
-          text: 'Katakana carries exactly the sounds you have already learned. Nothing new to hear, only new shapes to read. It marks words borrowed from other languages, foreign names, onomatopoeia, and sometimes emphasis, roughly the job italics do in English.',
+          text: 'Katakana carries exactly the sounds you have already learned; only the shapes are new. It marks words borrowed from other languages, foreign names, onomatopoeia, and sometimes emphasis, roughly the job italics do in English.',
         },
         {
           kind: 'note',
@@ -384,7 +384,7 @@ export const soundsAndScript: Module = {
         {
           kind: 'note',
           tone: 'warn',
-          title: 'Four pairs that catch everyone',
+          title: 'Two pairs that catch everyone',
           text: 'シ vs ツ and ソ vs ン differ only in stroke angle. シ and ン are written with strokes coming in low and flat; ツ and ソ come down from the top. When reading, use the surrounding word to decide.',
         },
       ],

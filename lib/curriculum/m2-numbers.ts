@@ -52,7 +52,7 @@ export const numbersAndCounting: Module = {
         { kind: 'h', text: 'Hundreds, thousands and 万' },
         {
           kind: 'p',
-          text: 'The same stacking continues, but certain combinations trigger sound changes to make them easier to say. These are not optional. さんひゃく is simply not a word.',
+          text: 'The same stacking continues, but certain combinations change their sound to make them easier to say, and only the changed form is correct: さんひゃく is not a word.',
         },
         { kind: 'numbers', table: 'large' },
         {
@@ -116,7 +116,7 @@ export const numbersAndCounting: Module = {
       body: [
         {
           kind: 'p',
-          text: 'Time uses 時 (じ) for hours and 分 (ふん / ぷん) for minutes. The structure is simple; the irregular readings are what you actually have to memorise.',
+          text: 'Time uses 時 (じ) for hours and 分 (ふん / ぷん) for minutes. The structure is simple; the irregular readings are what you have to memorise.',
         },
         { kind: 'h', text: 'Hours: 時' },
         {
@@ -128,7 +128,7 @@ export const numbersAndCounting: Module = {
           kind: 'note',
           tone: 'warn',
           title: 'Time overrides the usual preference',
-          text: '4:00 is よじ, 7:00 is しちじ, 9:00 is くじ. These are fixed. This is the main place where し and く are correct and よん and きゅう are wrong.',
+          text: '4:00 is よじ, 7:00 is しちじ, 9:00 is くじ. These are fixed. This is the main place where しち and く are correct and よん and きゅう are wrong.',
         },
         { kind: 'h', text: 'Minutes: 分' },
         {
@@ -150,7 +150,7 @@ export const numbersAndCounting: Module = {
     {
       slug: 'dates-and-days',
       title: 'Dates, months and days of the week',
-      summary: 'The first ten days of the month are irregular. The weekdays are named after elements.',
+      summary: 'The first ten days of the month are irregular. The weekdays are named after the sun, the moon and five elements.',
       minutes: 7,
       body: [
         {
@@ -174,7 +174,7 @@ export const numbersAndCounting: Module = {
         { kind: 'h', text: 'Days of the week' },
         {
           kind: 'p',
-          text: 'Each weekday is named after a classical element, which makes them easier to remember than they look.',
+          text: 'Each weekday is named after the sun, the moon or one of five classical elements, which makes them easier to remember than they look.',
         },
         { kind: 'numbers', table: 'weekdays' },
         {

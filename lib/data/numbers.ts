@@ -166,7 +166,7 @@ export const daysOfMonth: NumberRow[] = [
 export const months: NumberRow[] = [
   { value: 'January', kanji: '一月', kana: 'いちがつ', romaji: 'ichi-gatsu', deva: 'इचि-गात्सु' },
   { value: 'April', kanji: '四月', kana: 'しがつ', romaji: 'shi-gatsu', deva: 'शि-गात्सु', note: 'しがつ: not よんがつ.' },
-  { value: 'July', kanji: '七月', kana: 'しちがつ', romaji: 'shichi-gatsu', deva: 'शिचि-गात्सु', note: 'しちがつ: not ななたがつ.' },
+  { value: 'July', kanji: '七月', kana: 'しちがつ', romaji: 'shichi-gatsu', deva: 'शिचि-गात्सु', note: 'しちがつ: not なながつ.' },
   { value: 'September', kanji: '九月', kana: 'くがつ', romaji: 'ku-gatsu', deva: 'कु-गात्सु', note: 'くがつ: not きゅうがつ.' },
 ];
 

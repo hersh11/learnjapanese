@@ -18,7 +18,7 @@ export default function KanaPage() {
         </h1>
         <p className="mt-4 max-w-2xl text-[1.0625rem] leading-relaxed text-ink-soft">
           Every hiragana and katakana character with its Devanagari reading. Switch
-          on quiz mode to hide the readings and test yourself. Nothing is recorded,
+          on quiz mode to hide the readings and test yourself. Nothing is recorded;
           it is just a way to check what has stuck.
         </p>
         <VoiceNotice className="mt-4 max-w-2xl" />
