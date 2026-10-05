@@ -53,7 +53,14 @@ const config: Config = {
         amber: scale('amber'),
       },
       fontFamily: {
-        serif: ['var(--font-serif)', 'Noto Serif JP', 'Georgia', 'serif'],
+        serif: [
+          'var(--font-serif)',
+          'var(--font-serif-jp)',
+          'var(--font-serif-jp-extra)',
+          'Noto Serif JP',
+          'Georgia',
+          'serif',
+        ],
         sans: ['var(--font-sans)', 'Inter', 'system-ui', 'sans-serif'],
         jp: ['var(--font-jp)', 'Noto Sans JP', 'sans-serif'],
         deva: ['var(--font-deva)', 'Noto Sans Devanagari', 'sans-serif'],

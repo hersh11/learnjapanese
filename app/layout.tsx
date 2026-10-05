@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Noto_Sans_Devanagari, Noto_Sans_JP, Noto_Serif_JP } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
+import { fontVariables } from './fonts';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { themeInitScript } from '@/components/theme-toggle';
@@ -8,27 +9,6 @@ import { themeInitScript } from '@/components/theme-toggle';
 const sans = Inter({
   subsets: ['latin'],
   variable: '--font-sans',
-  display: 'swap',
-});
-
-const serif = Noto_Serif_JP({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-serif',
-  display: 'swap',
-});
-
-const jp = Noto_Sans_JP({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  variable: '--font-jp',
-  display: 'swap',
-});
-
-const deva = Noto_Sans_Devanagari({
-  subsets: ['devanagari'],
-  weight: ['400', '500', '600'],
-  variable: '--font-deva',
   display: 'swap',
 });
 
@@ -60,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${sans.variable} ${serif.variable} ${jp.variable} ${deva.variable}`}
+      className={`${sans.variable} ${fontVariables}`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />

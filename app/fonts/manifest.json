@@ -1,0 +1,82 @@
+{
+  "generatedBy": "scripts/fonts.mjs",
+  "files": {
+    "noto-serif-jp-latin.woff2": {
+      "family": "Noto Serif JP",
+      "weight": "400..600",
+      "glyphs": 196,
+      "bytes": 37104,
+      "gaps": "ː"
+    },
+    "noto-serif-jp-core-400.woff2": {
+      "family": "Noto Serif JP",
+      "weight": 400,
+      "glyphs": 58,
+      "bytes": 25600,
+      "gaps": ""
+    },
+    "noto-serif-jp-core-500.woff2": {
+      "family": "Noto Serif JP",
+      "weight": 500,
+      "glyphs": 58,
+      "bytes": 26668,
+      "gaps": ""
+    },
+    "noto-serif-jp-core-600.woff2": {
+      "family": "Noto Serif JP",
+      "weight": 600,
+      "glyphs": 58,
+      "bytes": 26664,
+      "gaps": ""
+    },
+    "noto-serif-jp-extra-400.woff2": {
+      "family": "Noto Serif JP",
+      "weight": 400,
+      "glyphs": 330,
+      "bytes": 89572,
+      "gaps": ""
+    },
+    "noto-serif-jp-extra-500.woff2": {
+      "family": "Noto Serif JP",
+      "weight": 500,
+      "glyphs": 330,
+      "bytes": 92488,
+      "gaps": ""
+    },
+    "noto-serif-jp-extra-600.woff2": {
+      "family": "Noto Serif JP",
+      "weight": 600,
+      "glyphs": 330,
+      "bytes": 92732,
+      "gaps": ""
+    },
+    "noto-sans-jp.woff2": {
+      "family": "Noto Sans JP",
+      "weight": "400..700",
+      "glyphs": 584,
+      "bytes": 168356,
+      "gaps": "ː"
+    },
+    "noto-sans-devanagari-400.woff2": {
+      "family": "Noto Sans Devanagari",
+      "weight": 400,
+      "glyphs": 145,
+      "bytes": 32328,
+      "gaps": "ː"
+    },
+    "noto-sans-devanagari-500.woff2": {
+      "family": "Noto Sans Devanagari",
+      "weight": 500,
+      "glyphs": 145,
+      "bytes": 34332,
+      "gaps": "ː"
+    },
+    "noto-sans-devanagari-600.woff2": {
+      "family": "Noto Sans Devanagari",
+      "weight": 600,
+      "glyphs": 145,
+      "bytes": 34444,
+      "gaps": "ː"
+    }
+  }
+}

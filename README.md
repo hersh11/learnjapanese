@@ -67,6 +67,34 @@ npm run build
 The export is fully static. It deploys to Vercel, Netlify, GitHub Pages or any
 static host with no server.
 
+## Fonts
+
+The Japanese and Devanagari faces are self-hosted and cut down to the characters
+the course actually uses: 388 Japanese and 46 Devanagari. Google Fonts would
+otherwise split each Japanese face into ~120 slices, which cost this site 868
+`@font-face` rules (236 KB gzipped of render-blocking CSS on every page) and up
+to 630 KB of font files per page.
+
+| | Before | After |
+|---|---|---|
+| Font CSS per page (gzipped) | 236 KB | 9 KB |
+| Fonts, cold load of a kanji lesson | 566 KB | 305 KB |
+| Fonts across home plus four lessons | 989 KB | 331 KB |
+
+Rendering is unchanged: every Japanese and Devanagari string on the site was
+compared pixel for pixel against the fonts the site used before.
+
+**If you add copy with a character the fonts do not have, regenerate them:**
+
+```bash
+npm run fonts
+```
+
+That fetches fresh subsets from the Google Fonts API into `app/fonts/` and rewrites
+`app/fonts.ts`; commit both. You cannot forget: `npm run build` runs
+`scripts/check-fonts.mjs` first, which reads each font file's character map and
+refuses to build if the copy uses anything missing, naming the characters.
+
 ## Stack
 
 Next.js (App Router, static export) · Tailwind CSS · Framer Motion · TypeScript.

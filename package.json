@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/check-fonts.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fonts": "node scripts/fonts.mjs",
+    "check:fonts": "node scripts/check-fonts.mjs"
   },
   "description": "Learn Japanese from zero to JLPT N4 — English site, Devanagari pronunciation guides.",
   "dependencies": {
