@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Page not found',
+  description: 'This page does not exist. Your progress is still saved in this browser.',
+};
 
 export default function NotFound() {
   return (
