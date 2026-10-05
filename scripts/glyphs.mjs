@@ -56,6 +56,10 @@ export function sourceFiles() {
  * endpoints. Those endpoints are code, not copy — nobody reads 龯 — but a plain
  * character scan would count them. Copy never writes a bracketed range between two
  * non-ASCII characters, so removing exactly that shape is safe.
+ *
+ * Any other non-ASCII character in a regex should be written as a \u escape,
+ * e.g. /[（）]/ rather than the characters themselves, so the scan never
+ * mistakes it for copy and demands glyphs nobody reads.
  */
 const SCRIPT_RANGE = /\[[^\]\n]*[^\x00-\x7f]-[^\x00-\x7f][^\]\n]*\]/g;
 

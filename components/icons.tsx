@@ -160,3 +160,10 @@ export const PartyPopper = (p: IconProps) => (
     <path d="M11 13a3 3 0 0 0-3-3 3 3 0 0 0-3 3l6.5 6.5a3 3 0 0 0 3-3 3 3 0 0 0-3-3Z" />
   </Svg>
 );
+
+export const Volume2 = (p: IconProps) => (
+  <Svg {...p}>
+    <path d="M11 5 6 9H2v6h4l5 4V5Z" />
+    <path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14" />
+  </Svg>
+);

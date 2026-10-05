@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { KanaExplorer } from '@/components/kana-explorer';
+import { VoiceNotice } from '@/components/speak';
 
 export const metadata: Metadata = {
   title: 'Kana chart',
@@ -20,6 +21,7 @@ export default function KanaPage() {
           on quiz mode to hide the readings and test yourself. Nothing is recorded,
           it is just a way to check what has stuck.
         </p>
+        <VoiceNotice className="mt-4 max-w-2xl" />
       </header>
 
       <div className="mt-10">

@@ -7,6 +7,9 @@ import type { Card } from '@/lib/practice/queue';
 import { newCard, previewInterval, type Direction, type Grade } from '@/lib/practice/scheduler';
 import { useReview } from '@/lib/practice/store';
 import type { Item } from '@/lib/practice/items';
+import { speakable } from '@/lib/speakable';
+import { speak, stop, useSpeech } from '@/lib/speech';
+import { Speak } from '@/components/speak';
 import { ArrowRight, Check, Eye, PartyPopper } from '@/components/icons';
 
 /* ------------------------------- prompt copy -------------------------------- */
@@ -37,6 +40,31 @@ function labelFor(item: Item, direction: Direction): string {
 
 /* --------------------------------- the card --------------------------------- */
 
+/** One fixed key, so the S shortcut and the button share a lit state. */
+const VOICE_KEY = 'practice-card';
+
+function spokenText(item: Item): string {
+  if (item.kind === 'kana') return item.jp;
+  return speakable(item, item.kind === 'sentence' ? 'sentence' : 'word');
+}
+
+/** Only ever on the answer side: on the front, hearing it would give it away. */
+function CardVoice({ item }: { item: Item }) {
+  return (
+    <>
+      {' '}
+      <Speak
+        text={spokenText(item)}
+        label={item.jp}
+        size="lg"
+        id={VOICE_KEY}
+        shortcut="S"
+        className="-mt-1"
+      />
+    </>
+  );
+}
+
 function KanaFace({ card, side }: { card: Card; side: 'front' | 'back' }) {
   const { item, direction } = card;
   // Production means being shown the sound and recalling the shape, so the prompt
@@ -49,6 +77,7 @@ function KanaFace({ card, side }: { card: Card; side: 'front' | 'back' }) {
       {showChar && (
         <p lang="ja" className="font-jp text-6xl font-medium leading-tight text-ink sm:text-7xl">
           {item.jp}
+          {side === 'back' && <CardVoice item={item} />}
         </p>
       )}
       {showSound && (
@@ -85,6 +114,7 @@ function Face({ card, side }: { card: Card; side: 'front' | 'back' }) {
       {showJp && (
         <p lang="ja" className={`font-jp font-medium leading-tight text-ink ${jpSize}`}>
           {item.jp}
+          {side === 'back' && <CardVoice item={item} />}
         </p>
       )}
 
@@ -149,6 +179,7 @@ export function ReviewSession({
   scopeLabel: string;
 }) {
   const { answer } = useReview();
+  const { available: canSpeak } = useSpeech();
 
   // The queue is a working list: an "Again" pushes the card back onto the end
   // rather than mutating the caller's array, so a lapse is re-asked this session.
@@ -210,6 +241,11 @@ export function ReviewSession({
         }
         return;
       }
+      if ((e.key === 's' || e.key === 'S') && canSpeak && card) {
+        e.preventDefault();
+        speak(VOICE_KEY, spokenText(card.item));
+        return;
+      }
       const match = grades.find((x) => x.key === e.key);
       if (match) {
         e.preventDefault();
@@ -218,7 +254,10 @@ export function ReviewSession({
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [shown, record]);
+  }, [shown, record, canSpeak, card]);
+
+  // A word still being read out when the next card appears would be confusing.
+  useEffect(() => stop, [card?.key]);
 
   const source = useMemo(() => {
     if (!card?.item.lessons.length) return null;

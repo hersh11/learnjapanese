@@ -27,6 +27,7 @@ postpositions, so particles map closely onto को / में / से.
 - **5 articles** on study method and what the JLPT actually measures
 - **Kana chart** with a quiz mode
 - **Spaced review** over every word, sentence and kana character in the course
+- **Pronunciation audio** on kana, vocabulary, examples, number tables and review cards
 
 ## Practice
 
@@ -109,9 +110,31 @@ Light is sakura pink on white; dark is neon pink on true OLED black. Both follow
 system preference by default and can be toggled in the header. Every colour token is
 checked to at least 4.5:1 contrast against its background.
 
+## Audio
+
+Pronunciation uses the browser's own speech engine, so there are no audio files to
+host and nothing to pay for. It needs a Japanese voice on the reader's device.
+Chrome and Edge include one, and so do iOS, macOS and Android. Windows on its own
+often does not, which mainly affects Firefox there. With no Japanese voice there
+are no speaker buttons at all, rather than buttons that read Japanese in an English
+voice, and the kana chart explains how to add one.
+
+What is spoken matches what the lesson teaches, not what the engine guesses:
+
+| Shown | Spoken |
+|---|---|
+| 食 `た(べる) / しょく` | たべる、しょく |
+| `きゅう / く` | きゅう、く |
+| 今、食べています | the sentence as written, so は reads as "wa" |
+
+Counters are left silent, because their notes list the wrong forms alongside the
+right ones ("ひとり, not いちにん"), and reading them out would teach both. In
+review, the speaker appears only once the answer is shown, and **S** plays it.
+
 ## Caveats
 
-No audio and no speaking practice, so pair this with a source of spoken Japanese.
+Audio is a reference voice, not speaking practice: nothing listens to you. Pair
+this with a source of spoken Japanese, ideally a person.
 
 Review only covers `vocab` and `examples` blocks. Material taught in `table`
 blocks — the て form conjugations, the counter mutations, most of the N4 endings —

@@ -1,7 +1,9 @@
 import type { Block, Example, VocabItem } from '@/lib/curriculum';
 import { kanaSets } from '@/lib/data/kana';
 import * as N from '@/lib/data/numbers';
+import { speakable } from '@/lib/speakable';
 import { AlertTriangle, Languages, Lightbulb } from './icons';
+import { Speak } from './speak';
 
 /* --------------------------------- primitives -------------------------------- */
 
@@ -152,9 +154,10 @@ function KanaGrid({
             {group.rows.map((row) => (
               <div
                 key={row.kana}
-                className="rounded-lg border border-rule bg-paper-raised px-3 py-3 text-center
+                className="relative rounded-lg border border-rule bg-paper-raised px-3 py-3 text-center
                            transition-colors duration-200 hover:border-sakura-300 hover:bg-sakura-50/40"
               >
+                <Speak text={row.kana} label={row.kana} size="md" className="absolute right-1 top-1" />
                 <Jp className="block font-jp text-3xl leading-tight text-ink">{row.kana}</Jp>
                 <Deva className="mt-1.5 block text-base leading-tight">{row.deva}</Deva>
                 <span className="mt-0.5 block text-xs text-ink-faint">{row.romaji}</span>
@@ -213,7 +216,8 @@ function NumberTable({ table }: { table: keyof typeof numberTables }) {
                 <Jp className="font-jp text-lg">{r.kanji}</Jp>
               </td>
               <td className="py-3 pr-5 align-top">
-                <Jp className="font-jp">{r.kana}</Jp>
+                <Jp className="font-jp">{r.kana}</Jp>{' '}
+                <Speak text={speakable({ jp: r.kanji, kana: r.kana }, 'word')} label={r.kana} reserve />
               </td>
               <td className="py-3 pr-5 align-top">
                 <Deva className="text-base">{r.deva}</Deva>
@@ -280,7 +284,10 @@ function Examples({ items }: { items: Example[] }) {
     >
       {items.map((ex, i) => (
         <li key={i} className="rule-left">
-          <Jp className="block font-jp text-xl leading-snug text-ink">{ex.jp}</Jp>
+          <Jp className="block font-jp text-xl leading-snug text-ink">
+            {ex.jp}{' '}
+            <Speak text={speakable(ex, 'sentence')} label={ex.jp} reserve />
+          </Jp>
           {ex.kana && ex.kana !== ex.jp && (
             <Jp className="mt-1 block font-jp text-sm text-ink-muted">{ex.kana}</Jp>
           )}
@@ -314,6 +321,7 @@ function Vocab({ title, items }: { title?: string; items: VocabItem[] }) {
               {v.kana && v.kana !== v.jp && (
                 <Jp className="font-jp text-xs text-ink-faint">{v.kana}</Jp>
               )}
+              <Speak text={speakable(v, 'word')} label={v.jp} reserve className="ml-auto self-center" />
             </div>
             <Deva className="mt-1 block text-[0.9375rem] leading-snug">{v.deva}</Deva>
             <span className="mt-0.5 block text-sm text-ink-muted">{v.en}</span>

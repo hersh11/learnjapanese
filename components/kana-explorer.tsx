@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { kanaSets, type KanaRow, type Script } from '@/lib/data/kana';
+import { Speak } from './speak';
 
 type SetKey = 'base' | 'dakuten' | 'youon';
 
@@ -169,21 +170,36 @@ function Card({
   );
 
   const classes =
-    'rounded-lg border border-rule bg-paper-raised px-2 py-4 text-center transition-colors duration-200';
+    'block h-full w-full rounded-lg border border-rule bg-paper-raised px-2 py-4 text-center transition-colors duration-200';
+
+  // The speaker is a sibling of the card, not inside it: in quiz mode the card is
+  // itself a button, and buttons cannot nest. It also stays away while the reading
+  // is hidden, because hearing the sound would answer the question.
+  const speaker = !hidden && (
+    <Speak text={row.kana} label={row.kana} size="md" className="absolute right-1 top-1" />
+  );
 
   if (!quiz) {
-    return <div className={classes}>{content}</div>;
+    return (
+      <div className="relative">
+        <div className={classes}>{content}</div>
+        {speaker}
+      </div>
+    );
   }
 
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-label={hidden ? `Reveal reading for ${row.kana}` : `${row.kana} is ${row.romaji}`}
-      className={`${classes} cursor-pointer hover:border-sakura-300 hover:bg-sakura-50/40`}
-    >
-      {content}
-    </button>
+    <div className="relative">
+      <button
+        type="button"
+        onClick={onClick}
+        aria-label={hidden ? `Reveal reading for ${row.kana}` : `${row.kana} is ${row.romaji}`}
+        className={`${classes} cursor-pointer hover:border-sakura-300 hover:bg-sakura-50/40`}
+      >
+        {content}
+      </button>
+      {speaker}
+    </div>
   );
 }
 
