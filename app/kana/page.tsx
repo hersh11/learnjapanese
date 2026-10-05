@@ -1,12 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta } from '@/lib/site';
 import { KanaExplorer } from '@/components/kana-explorer';
 import { VoiceNotice } from '@/components/speak';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: 'Kana chart',
   description:
     'The full hiragana and katakana charts with Devanagari pronunciation for every character, plus a quiz mode.',
-};
+  path: '/kana/',
+});
 
 export default function KanaPage() {
   return (

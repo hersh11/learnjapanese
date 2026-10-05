@@ -1,13 +1,15 @@
 import type { Metadata } from 'next';
+import { pageMeta } from '@/lib/site';
 import { modules, totalLessons, totalMinutes } from '@/lib/curriculum';
 import { ModuleList } from '@/components/module-list';
 import { ProgressBar } from '@/components/progress-bar';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: 'The course',
   description:
     'Every lesson from the first hiragana character to JLPT N4 grammar, in order.',
-};
+  path: '/learn/',
+});
 
 export default function LearnPage() {
   const hours = Math.round(totalMinutes / 60);

@@ -1,9 +1,15 @@
 import type { Metadata } from 'next';
+import { pageMeta } from '@/lib/site';
 import { ProgressPanel } from '@/components/progress-panel';
 
 export const metadata: Metadata = {
-  title: 'Your progress',
-  description: 'What you have completed so far. Stored in this browser only.',
+  ...pageMeta({
+    title: 'Your progress',
+    description:
+      'What you have completed so far. Stored in this browser only.',
+    path: '/progress/',
+  }),
+  robots: { index: false },
 };
 
 export default function ProgressPage() {

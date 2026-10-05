@@ -5,6 +5,7 @@ import { fontVariables } from './fonts';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { themeInitScript } from '@/components/theme-toggle';
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site';
 
 const sans = Inter({
   subsets: ['latin'],
@@ -13,12 +14,15 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: 'Nihongo Path: Learn Japanese from zero to N4',
-    template: '%s · Nihongo Path',
+    template: `%s · ${SITE_NAME}`,
   },
-  description:
-    'A free, calm course in Japanese from the first character to JLPT N4. Taught in English, with Devanagari pronunciation guides for Hindi speakers. No account needed.',
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  openGraph: { type: 'website', siteName: SITE_NAME, locale: 'en_IN' },
+  twitter: { card: 'summary_large_image' },
   keywords: ['learn Japanese', 'JLPT N5', 'JLPT N4', 'hiragana', 'katakana', 'Japanese for Hindi speakers'],
 };
 

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { absolute, pageMeta, SITE_NAME } from '@/lib/site';
+import { breadcrumbs, JsonLd } from '@/components/json-ld';
 import { articles, getArticle } from '@/lib/data/articles';
 import { Blocks } from '@/components/blocks';
 import { ReadingProgress } from '@/components/reading-progress';
@@ -16,7 +18,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const a = getArticle(slug);
   if (!a) return {};
-  return { title: a.title, description: a.summary };
+  return pageMeta({
+    title: a.title,
+    description: a.summary,
+    path: `/articles/${a.slug}/`,
+    type: 'article',
+  });
 }
 
 export default async function ArticlePage({ params }: Props) {
@@ -29,16 +36,37 @@ export default async function ArticlePage({ params }: Props) {
   return (
     <article className="mx-auto max-w-3xl px-5 py-16 sm:px-8">
       <ReadingProgress />
+      <JsonLd
+        data={{
+          '@graph': [
+            {
+              '@type': 'Article',
+              headline: article.title,
+              description: article.summary,
+              url: absolute(`/articles/${article.slug}/`),
+              inLanguage: 'en',
+              timeRequired: `PT${article.minutes}M`,
+              publisher: { '@type': 'Organization', name: SITE_NAME, url: absolute('/') },
+            },
+            breadcrumbs([
+              ['Articles', '/articles/'],
+              [article.title, `/articles/${article.slug}/`],
+            ]),
+          ],
+        }}
+      />
 
-      <Link
-        href="/articles/"
-        className="group -my-1 inline-flex cursor-pointer items-center gap-2 py-1 text-sm text-ink-muted transition-colors duration-200 hover:text-sakura-700"
-      >
-        <span className="h-4 w-4 transition-transform duration-200 group-hover:-translate-x-0.5">
-          <ArrowLeft />
-        </span>
-        Articles
-      </Link>
+      <nav aria-label="Breadcrumb">
+          <Link
+            href="/articles/"
+          className="group -my-1 inline-flex cursor-pointer items-center gap-2 py-1 text-sm text-ink-muted transition-colors duration-200 hover:text-sakura-700"
+        >
+          <span className="h-4 w-4 transition-transform duration-200 group-hover:-translate-x-0.5">
+            <ArrowLeft />
+          </span>
+          Articles
+        </Link>
+      </nav>
 
       <header className="mt-8 border-b border-rule pb-8">
         <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs uppercase tracking-wider text-ink-faint">

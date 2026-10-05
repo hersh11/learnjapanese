@@ -1,4 +1,7 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+import { JsonLd } from '@/components/json-ld';
+import { absolute, SITE_DESCRIPTION, SITE_NAME } from '@/lib/site';
 import { modules, totalLessons, totalMinutes } from '@/lib/curriculum';
 import { ContinueButton } from '@/components/continue-button';
 import { Reveal } from '@/components/reveal';
@@ -25,11 +28,42 @@ const pillars = [
   },
 ];
 
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+  openGraph: { url: '/' },
+};
+
+const homeData = {
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      name: SITE_NAME,
+      url: absolute('/'),
+      description: SITE_DESCRIPTION,
+      inLanguage: 'en',
+    },
+    {
+      '@type': 'Course',
+      name: 'Japanese from zero to JLPT N4',
+      description: SITE_DESCRIPTION,
+      url: absolute('/learn/'),
+      inLanguage: 'en',
+      isAccessibleForFree: true,
+      educationalLevel: 'Beginner',
+      provider: { '@type': 'Organization', name: SITE_NAME, url: absolute('/') },
+      hasPart: modules
+        .filter((m) => !m.upcoming)
+        .map((m) => ({ '@type': 'Course', name: m.title, url: absolute(`/learn/${m.slug}/`) })),
+    },
+  ],
+};
+
 export default function HomePage() {
   const hours = Math.round(totalMinutes / 60);
 
   return (
     <>
+      <JsonLd data={homeData} />
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-rule">
         <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">

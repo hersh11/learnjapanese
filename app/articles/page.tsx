@@ -1,14 +1,16 @@
 import type { Metadata } from 'next';
+import { pageMeta } from '@/lib/site';
 import Link from 'next/link';
 import { articles } from '@/lib/data/articles';
 import { Reveal } from '@/components/reveal';
 import { ArrowRight, Clock } from '@/components/icons';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: 'Articles',
   description:
     'Essays on how to study Japanese, what the JLPT measures, and what transfers from Hindi.',
-};
+  path: '/articles/',
+});
 
 export default function ArticlesPage() {
   return (

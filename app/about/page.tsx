@@ -1,12 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta } from '@/lib/site';
 import Link from 'next/link';
 import { totalLessons, totalMinutes } from '@/lib/curriculum';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: 'How this works',
   description:
     'What this course covers, who it is for, and the decisions behind how it is written.',
-};
+  path: '/about/',
+});
 
 export default function AboutPage() {
   const hours = Math.round(totalMinutes / 60);

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { absolute, pageMeta } from '@/lib/site';
+import { breadcrumbs, JsonLd } from '@/components/json-ld';
 import { getLesson, modules, neighbours } from '@/lib/curriculum';
 import { itemsForLesson } from '@/lib/practice/items';
 import { Blocks } from '@/components/blocks';
@@ -20,7 +22,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { module: moduleSlug, lesson: lessonSlug } = await params;
   const found = getLesson(moduleSlug, lessonSlug);
   if (!found) return {};
-  return { title: found.lesson.title, description: found.lesson.summary };
+  return pageMeta({
+    title: found.lesson.title,
+    description: found.lesson.summary,
+    path: `/learn/${found.module.slug}/${found.lesson.slug}/`,
+  });
 }
 
 export default async function LessonPage({ params }: Props) {
@@ -34,6 +40,29 @@ export default async function LessonPage({ params }: Props) {
   return (
     <article className="mx-auto max-w-3xl px-5 py-16 sm:px-8">
       <ReadingProgress />
+      <JsonLd
+        data={{
+          '@graph': [
+            {
+              '@type': 'LearningResource',
+              name: lesson.title,
+              description: lesson.summary,
+              url: absolute(`/learn/${mod.slug}/${lesson.slug}/`),
+              inLanguage: 'en',
+              learningResourceType: 'Lesson',
+              educationalLevel: `JLPT ${mod.level}`,
+              timeRequired: `PT${lesson.minutes}M`,
+              isAccessibleForFree: true,
+              isPartOf: { '@type': 'Course', name: mod.title, url: absolute(`/learn/${mod.slug}/`) },
+            },
+            breadcrumbs([
+              ['The course', '/learn/'],
+              [mod.title, `/learn/${mod.slug}/`],
+              [lesson.title, `/learn/${mod.slug}/${lesson.slug}/`],
+            ]),
+          ],
+        }}
+      />
 
       <nav aria-label="Breadcrumb">
         <Link
